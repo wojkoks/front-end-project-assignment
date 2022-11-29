@@ -14,15 +14,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 10vh;
   padding: 20px;
   padding-left: 10%;
   padding-right: 10%;
   background-color: #f6f6f6;
-}
-.header .logo {
-  -ms-flex-item-align: center;
-      align-self: center;
 }
 .header .name {
   display: -webkit-box;
@@ -40,10 +39,6 @@
 .header .namenapis2 {
   color: #2ad591;
   background-color: #f6f6f6;
-}
-.header .nav {
-  -ms-flex-item-align: center;
-      align-self: center;
 }
 
 .mainpage .carousel {

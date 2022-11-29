@@ -10,16 +10,12 @@ $secondColor: #f6f6f6;
 .header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	height: 10vh;
 	padding: 20px;
 	padding-left: 10%;
 	padding-right: 10%;
 	background-color: $secondColor;
-
-	.logo {
-		align-self: center;
-	}
-
 	.name {
 		display: flex;
 		align-items: center;
@@ -32,9 +28,6 @@ $secondColor: #f6f6f6;
 	.namenapis2 {
 		color: $mainColor;
 		background-color: $secondColor;
-	}
-	.nav {
-		align-self: center;
 	}
 }
 .mainpage {
