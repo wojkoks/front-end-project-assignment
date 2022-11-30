@@ -32,11 +32,11 @@
           align-items: center;
   font-size: 2rem;
 }
-.header .namenapis1 {
+.header .name .namenapis1 {
   color: black;
   background-color: #f6f6f6;
 }
-.header .namenapis2 {
+.header .name .namenapis2 {
   color: #2ad591;
   background-color: #f6f6f6;
 }
@@ -46,6 +46,7 @@
   background-color: black;
 }
 .mainpage .specbutton {
+  position: relative;
   height: 7vh;
   margin-left: 10%;
   margin-right: 10%;
@@ -53,6 +54,22 @@
   border-radius: 25px;
   color: white;
   background-color: #2ad591;
+}
+.mainpage .specbutton .specbuttontext {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1rem;
+}
+.mainpage .specbutton .fa-caret-down {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 /* .specbutton:hover{

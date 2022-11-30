@@ -20,14 +20,14 @@ $secondColor: #f6f6f6;
 		display: flex;
 		align-items: center;
 		font-size: 2rem;
-	}
-	.namenapis1 {
-		color: black;
-		background-color: $secondColor;
-	}
-	.namenapis2 {
-		color: $mainColor;
-		background-color: $secondColor;
+		.namenapis1 {
+			color: black;
+			background-color: $secondColor;
+		}
+		.namenapis2 {
+			color: $mainColor;
+			background-color: $secondColor;
+		}
 	}
 }
 .mainpage {
@@ -37,6 +37,7 @@ $secondColor: #f6f6f6;
 	}
 
 	.specbutton {
+		position: relative;
 		height: 7vh;
 		margin-left: 10%;
 		margin-right: 10%;
@@ -44,6 +45,20 @@ $secondColor: #f6f6f6;
 		border-radius: 25px;
 		color: white;
 		background-color: $mainColor;
+		.specbuttontext {
+			position: absolute;
+			top: 50%;
+			left: 45%;
+			transform: translate(-50%, -50%);
+			font-size: 1rem;
+		}
+		.fa-caret-down {
+			font-size: 2rem;
+			position: absolute;
+			top: 50%;
+			left: 85%;
+			transform: translate(-50%, -50%);
+		}
 	}
 }
 /* .specbutton:hover{
