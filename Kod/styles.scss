@@ -31,11 +31,11 @@ $secondColor: #f6f6f6;
 	}
 }
 .mainpage {
+	position: relative;
 	.carousel {
 		height: 30vh;
 		background-color: black;
 	}
-
 	.specbutton {
 		position: relative;
 		height: 7vh;
@@ -58,6 +58,23 @@ $secondColor: #f6f6f6;
 			top: 50%;
 			left: 85%;
 			transform: translate(-50%, -50%);
+		}
+	}
+	.nasi {
+		position: relative;
+		height: 7vh;
+		margin-top: 5%;
+		.nasiTitle {
+			text-align: center;
+		}
+		.linia {
+			position: absolute;
+			height: 0.1vh;
+			width: 40vh;
+			top: 80%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: grey;
 		}
 	}
 }

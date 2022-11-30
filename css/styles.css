@@ -41,6 +41,9 @@
   background-color: #f6f6f6;
 }
 
+.mainpage {
+  position: relative;
+}
 .mainpage .carousel {
   height: 30vh;
   background-color: black;
@@ -70,6 +73,24 @@
   left: 85%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+.mainpage .nasi {
+  position: relative;
+  height: 7vh;
+  margin-top: 5%;
+}
+.mainpage .nasi .nasiTitle {
+  text-align: center;
+}
+.mainpage .nasi .linia {
+  position: absolute;
+  height: 0.1vh;
+  width: 40vh;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: grey;
 }
 
 /* .specbutton:hover{
