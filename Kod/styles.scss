@@ -14,7 +14,8 @@ $secondColor: #f6f6f6;
 	height: 50vh;
 	padding: 20px;
 	padding-left: 10%;
-	padding-right: 10%;
+	padding-right: 20px;
+	justify-content: right;
 	background-color: $secondColor;
 	background-image: url(../img/Przechwytywanie.PNG);
 	background-repeat: no-repeat;
@@ -22,7 +23,6 @@ $secondColor: #f6f6f6;
 	.name {
 		display: flex;
 		align-items: center;
-		font-size: 2rem;
 		.namenapis1 {
 			color: black;
 			background-color: $secondColor;
@@ -30,6 +30,12 @@ $secondColor: #f6f6f6;
 		.namenapis2 {
 			color: $mainColor;
 			background-color: $secondColor;
+		}
+	}
+	.nav {
+		.fa-bars{
+			font-size: 2.5rem;
+			color:$mainColor;
 		}
 	}
 }

@@ -12,7 +12,8 @@
   height: 50vh;
   padding: 20px;
   padding-left: 10%;
-  padding-right: 10%;
+  padding-right: 20px;
+  justify-content: right;
   background-color: #f6f6f6;
   background-image: url(../img/Przechwytywanie.PNG);
   background-repeat: no-repeat;
@@ -21,7 +22,6 @@
 .header .name {
   display: flex;
   align-items: center;
-  font-size: 2rem;
 }
 .header .name .namenapis1 {
   color: black;
@@ -30,6 +30,10 @@
 .header .name .namenapis2 {
   color: #2ad591;
   background-color: #f6f6f6;
+}
+.header .nav .fa-bars {
+  font-size: 2.5rem;
+  color: #2ad591;
 }
 
 .mainpage {
