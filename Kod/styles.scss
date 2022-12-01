@@ -20,23 +20,24 @@ $secondColor: #f6f6f6;
 		display: flex;
 		align-items: center;
 		font-size: 2rem;
-	}
-	.namenapis1 {
-		color: black;
-		background-color: $secondColor;
-	}
-	.namenapis2 {
-		color: $mainColor;
-		background-color: $secondColor;
+		.namenapis1 {
+			color: black;
+			background-color: $secondColor;
+		}
+		.namenapis2 {
+			color: $mainColor;
+			background-color: $secondColor;
+		}
 	}
 }
 .mainpage {
+	position: relative;
 	.carousel {
 		height: 30vh;
 		background-color: black;
 	}
-
 	.specbutton {
+		position: relative;
 		height: 7vh;
 		margin-left: 10%;
 		margin-right: 10%;
@@ -44,6 +45,37 @@ $secondColor: #f6f6f6;
 		border-radius: 25px;
 		color: white;
 		background-color: $mainColor;
+		.specbuttontext {
+			position: absolute;
+			top: 50%;
+			left: 45%;
+			transform: translate(-50%, -50%);
+			font-size: 1rem;
+		}
+		.fa-caret-down {
+			font-size: 2rem;
+			position: absolute;
+			top: 50%;
+			left: 85%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	.nasi {
+		position: relative;
+		height: 7vh;
+		margin-top: 5%;
+		.nasiTitle {
+			text-align: center;
+		}
+		.linia {
+			position: absolute;
+			height: 0.1vh;
+			width: 40vh;
+			top: 80%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: grey;
+		}
 	}
 }
 /* .specbutton:hover{
