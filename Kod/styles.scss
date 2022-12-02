@@ -11,35 +11,34 @@ body{
 	position: relative;
 }
 nav{
-	.fa-bars{
+	.fa-bars{	
+		width: 4rem;
+		height: 4rem;
+		padding:14px;
+		padding-top:11px;
+		border-radius: 40%;
+		background-color: white;
 		position: fixed;
+		z-index: 3;
 		top: 20px;
 		right: 20px;
 		font-size: 2.5rem;
 		color:$mainColor;
+		border-style: groove;
+		border-color: #f6f6f65d;
+		border-left: none;
+		border-bottom: none;
 	}
 }
 .header {
 	height: 50vh;
 	padding-left: 20px;
 	padding-right: 20px;
-	background-color: $secondColor;
+	//background-color: $secondColor;
 	background-image: url(../img/Przechwytywanie.PNG);
 	background-size: cover;
-	background-position: center;
-	// .name {
-	// 	display: flex;
-	// 	align-items: center;
-	// 	.namenapis1 {
-	// 		color: black;
-	// 		background-color: $secondColor;
-	// 	}
-	// 	.namenapis2 {
-	// 		color: $mainColor;
-	// 		background-color: $secondColor;
-	// 	}
-	// }
-		
+	background-position: center;	
+
 }
 .mainpage {
 	position: relative;
@@ -98,34 +97,39 @@ nav{
 			width: 40vh;
 			margin-bottom: 40px;
 			.image{
-				position: absolute;
-				height: 200px;
-				width: 20vh;
+				float:left;
 				background-color: black;
+				height: 200px;
+				width: 40vw;
+				margin-right: 5px;
 			}
 			.info{
-				position: absolute;
-				left: 22vh;
-				top: 15px;
+				background-color: #2ad591;
 				font-size: 1.2rem;
-				}
+				height:200px;
+				.id {
+				}	
+			}
 			.workhours{
 				
-				position: absolute;	
+				//position: absolute;	
 				top:220px;
 				text-align: left;
 				}
 			.rezbutton{
-				position: relative;
+				//position: relative;
 				height: 60px;
-				width: 300px;
-				top: 280px;
-				left: 20px;	
+				width: 86vw;
+				//top: 280px;
+				//left: 20px;	
 				border-radius: 25px;
 				background-color: $mainColor;
+				//align-content: center;
+				//justify-content: center;
 				.rezbuttontext{
+					
 					position: absolute;
-					top: 50%;
+					top: 84%;
 					left: 50%;
 					transform: translate(-50%,-50%);
 					color: white;
