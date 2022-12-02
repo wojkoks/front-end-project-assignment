@@ -6,34 +6,26 @@
   padding: 0;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  height: 50vh;
-  padding: 20px;
-  padding-left: 10%;
-  padding-right: 20px;
-  justify-content: right;
-  background-color: #f6f6f6;
-  background-image: url(../img/Przechwytywanie.PNG);
-  background-repeat: no-repeat;
-  background-size: contain;
+body {
+  position: relative;
 }
-.header .name {
-  display: flex;
-  align-items: center;
-}
-.header .name .namenapis1 {
-  color: black;
-  background-color: #f6f6f6;
-}
-.header .name .namenapis2 {
-  color: #2ad591;
-  background-color: #f6f6f6;
-}
-.header .nav .fa-bars {
+
+nav .fa-bars {
+  position: fixed;
+  top: 20px;
+  right: 20px;
   font-size: 2.5rem;
   color: #2ad591;
+}
+
+.header {
+  height: 50vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f6f6f6;
+  background-image: url(../img/Przechwytywanie.PNG);
+  background-size: cover;
+  background-position: center;
 }
 
 .mainpage {
@@ -46,8 +38,8 @@
 .mainpage .specbutton {
   position: relative;
   height: 7vh;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 300px;
+  left: 45px;
   margin-top: 5%;
   border-radius: 25px;
   color: white;
@@ -61,11 +53,11 @@
   font-size: 1rem;
 }
 .mainpage .specbutton .fa-caret-down {
-  font-size: 2rem;
   position: absolute;
   top: 50%;
   left: 85%;
   transform: translate(-50%, -50%);
+  font-size: 2rem;
 }
 .mainpage .nasi {
   position: relative;
@@ -84,7 +76,54 @@
   transform: translate(-50%, -50%);
   background-color: grey;
 }
-
-/* .specbutton:hover{
-    background-color: #21a973;
-} *//*# sourceMappingURL=styles.css.map */
+.mainpage .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainpage .list .worker {
+  position: relative;
+  height: 350px;
+  width: 40vh;
+  margin-bottom: 40px;
+}
+.mainpage .list .worker .image {
+  position: absolute;
+  height: 200px;
+  width: 20vh;
+  background-color: black;
+}
+.mainpage .list .worker .info {
+  position: absolute;
+  left: 22vh;
+  top: 15px;
+  font-size: 1.2rem;
+}
+.mainpage .list .worker .workhours {
+  position: absolute;
+  top: 220px;
+  text-align: left;
+}
+.mainpage .list .worker .rezbutton {
+  position: relative;
+  height: 60px;
+  width: 300px;
+  top: 280px;
+  left: 20px;
+  border-radius: 25px;
+  background-color: #2ad591;
+}
+.mainpage .list .worker .rezbutton .rezbuttontext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.mainpage .list .worker .linia {
+  position: absolute;
+  height: 0.1vh;
+  width: 40vh;
+  top: 360px;
+  background-color: grey;
+}/*# sourceMappingURL=styles.css.map */

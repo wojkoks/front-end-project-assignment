@@ -7,37 +7,39 @@ $secondColor: #f6f6f6;
 	margin: 0;
 	padding: 0;
 }
+body{
+	position: relative;
+}
+nav{
+	.fa-bars{
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		font-size: 2.5rem;
+		color:$mainColor;
+	}
+}
 .header {
-	display: flex;
-	justify-content: space-between;
-	//align-items: center;
 	height: 50vh;
-	padding: 20px;
-	padding-left: 10%;
+	padding-left: 20px;
 	padding-right: 20px;
-	justify-content: right;
 	background-color: $secondColor;
 	background-image: url(../img/Przechwytywanie.PNG);
-	background-repeat: no-repeat;
-	background-size: contain;
-	.name {
-		display: flex;
-		align-items: center;
-		.namenapis1 {
-			color: black;
-			background-color: $secondColor;
-		}
-		.namenapis2 {
-			color: $mainColor;
-			background-color: $secondColor;
-		}
-	}
-	.nav {
-		.fa-bars{
-			font-size: 2.5rem;
-			color:$mainColor;
-		}
-	}
+	background-size: cover;
+	background-position: center;
+	// .name {
+	// 	display: flex;
+	// 	align-items: center;
+	// 	.namenapis1 {
+	// 		color: black;
+	// 		background-color: $secondColor;
+	// 	}
+	// 	.namenapis2 {
+	// 		color: $mainColor;
+	// 		background-color: $secondColor;
+	// 	}
+	// }
+		
 }
 .mainpage {
 	position: relative;
@@ -45,11 +47,11 @@ $secondColor: #f6f6f6;
 		height: 30vh;
 		background-color: black;
 	}
-	.specbutton {
+	.specbutton{
 		position: relative;
 		height: 7vh;
-		margin-left: 10%;
-		margin-right: 10%;
+		width: 300px;
+		left: 45px;
 		margin-top: 5%;
 		border-radius: 25px;
 		color: white;
@@ -62,11 +64,11 @@ $secondColor: #f6f6f6;
 			font-size: 1rem;
 		}
 		.fa-caret-down {
-			font-size: 2rem;
 			position: absolute;
 			top: 50%;
 			left: 85%;
 			transform: translate(-50%, -50%);
+			font-size: 2rem;
 		}
 	}
 	.nasi {
@@ -86,7 +88,56 @@ $secondColor: #f6f6f6;
 			background-color: grey;
 		}
 	}
+	.list{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.worker{
+			position: relative;
+			height: 350px;
+			width: 40vh;
+			margin-bottom: 40px;
+			.image{
+				position: absolute;
+				height: 200px;
+				width: 20vh;
+				background-color: black;
+			}
+			.info{
+				position: absolute;
+				left: 22vh;
+				top: 15px;
+				font-size: 1.2rem;
+				}
+			.workhours{
+				
+				position: absolute;	
+				top:220px;
+				text-align: left;
+				}
+			.rezbutton{
+				position: relative;
+				height: 60px;
+				width: 300px;
+				top: 280px;
+				left: 20px;	
+				border-radius: 25px;
+				background-color: $mainColor;
+				.rezbuttontext{
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%,-50%);
+					color: white;
+				}
+			}
+			.linia{
+			position: absolute;
+			height: 0.1vh;
+			width: 40vh;
+			top: 360px;
+			background-color: grey;
+			}
+		}
+	}
 }
-/* .specbutton:hover{
-    background-color: #21a973;
-} */
