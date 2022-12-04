@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>POLmed</title>
-		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="/css/styles.css" />
 		<script
 			src="https://kit.fontawesome.com/53b832894a.js"
 			crossorigin="anonymous"
@@ -16,14 +16,19 @@
 			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
 			crossorigin="anonymous"
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
-	<body>	
+	<body>
 		<nav>
 			<div class="fa-solid fa-bars"></div>
 			<div class="shadow-bg"></div>
 		</nav>
-		<div class="header">
-		</div>
+		<div class="header"></div>
 		<div class="mainpage">
 			<div class="carousel">
 				<div
@@ -61,16 +66,52 @@
 					</div>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="..." class="d-block w-100" alt="..." />
+							<img
+								src="/img/black-family-girl-consulting-doctor-hospital-healthcare-medical-room-with-mother-father-kids-smile-happy-trust-with-pediatrician-employee-worker-children-medicine-support_590464-80740.png"
+								class="d-block w-100"
+								alt="..."
+							/>
+							<div class="carousel-caption d-md-block">
+								<h5>Second slide label</h5>
+								<p>
+									Some representative placeholder content for the second slide.
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="/img/doctor-happy-family-hospital-doctor-happy-family-mother-father-daughter-hospital-medical-healthcare-197843654.png"
+								class="d-block w-100"
+								alt="..."
+							/>
+							<div class="carousel-caption d-md-block">
+								<h5>Second slide label</h5>
+								<p>
+									Some representative placeholder content for the second slide.
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="/img/23_ATOP_Beauty_Clinic___TEAM55667788.png"
+								class="d-block w-100"
+								alt="..."
+							/>
+							<div class="carousel-caption d-md-block">
+								<h5>Second slide label</h5>
+								<p>
+									Some representative placeholder content for the second slide.
+								</p>
+							</div>
 						</div>
 						<div class="carousel-item">
 							<img src="..." class="d-block w-100" alt="..." />
-						</div>
-						<div class="carousel-item">
-							<img src="..." class="d-block w-100" alt="..." />
-						</div>
-						<div class="carousel-item">
-							<img src="..." class="d-block w-100" alt="..." />
+							<div class="carousel-caption d-md-block">
+								<h5>Second slide label</h5>
+								<p>
+									Some representative placeholder content for the second slide.
+								</p>
+							</div>
 						</div>
 					</div>
 					<button
@@ -93,9 +134,11 @@
 					</button>
 				</div>
 			</div>
-			<div class="specbutton" type="button">
-				<p class="specbuttontext">Wybierz specjalizacje</p>
-				<i class="fa-solid fa-caret-down"></i>
+			<div class="specjalizacja">
+				<div class="specbutton" type="button">
+					<p class="specbuttontext">Wybierz specjalizacje</p>
+					<i class="fa-solid fa-chevron-down"></i>
+				</div>
 			</div>
 			<div class="nasi">
 				<h2 class="nasiTitle">Nasi lekarze i specjalisci</h2>
@@ -111,55 +154,56 @@
 					</div>
 					<div class="workhours">
 						<p class="dane2">
-									Godziny przyjęć:
-									Poniedziałek: 8:00-15:00
-									Wtorek: 9:00-16:00
-									Piątek: 10:00-20:00
+							Godziny przyjęć: Poniedziałek: 8:00-15:00 Wtorek: 9:00-16:00
+							Piątek: 10:00-20:00
 						</p>
 					</div>
-					<div class="rezbutton"><div class="rezbuttontext">Zarezerwuj wizytę</div></div>
+					<div class="rezerwacja">
+						<div class="rezbutton">
+							<div class="rezbuttontext">Zarezerwuj wizytę</div>
+						</div>
+					</div>
+
 					<div class="linia"></div>
 				</div>
 				<div class="worker">
 					<div class="image"></div>
 					<div class="info">
-							<p class="dane1">Imię i nazwisko:
-											Bartosz Kopiczak
-											Specjalizacja:
-											Pediatra								
-							</p>
-							
+						<p class="dane1">
+							Imię i nazwisko: Bartosz Kopiczak Specjalizacja: Pediatra
+						</p>
 					</div>
 					<div class="workhours">
 						<p class="dane2">
-									Godziny przyjęć:
-									Poniedziałek: 8:00-15:00
-									Wtorek: 9:00-16:00
-									Piątek: 10:00-20:00
+							Godziny przyjęć: Poniedziałek: 8:00-15:00 Wtorek: 9:00-16:00
+							Piątek: 10:00-20:00
 						</p>
 					</div>
-					<div class="rezbutton"><p class="rezbuttontext">Zarezerwuj wizytę</p></div>
+					<div class="rezerwacja">
+						<div class="rezbutton">
+							<div class="rezbuttontext">Zarezerwuj wizytę</div>
+						</div>
+					</div>
 					<div class="linia"></div>
 				</div>
 				<div class="worker">
 					<div class="image"></div>
 					<div class="info">
-							<p class="dane1">Imię i nazwisko:
-											Bartosz Kopiczak
-											Specjalizacja:
-											Pediatra								
-							</p>
-							
+						<p class="dane1">
+							Imię i nazwisko: Bartosz Kopiczak Specjalizacja: Pediatra
+						</p>
 					</div>
 					<div class="workhours">
 						<p class="dane2">
-									Godziny przyjęć:
-									Poniedziałek: 8:00-15:00
-									Wtorek: 9:00-16:00
-									Piątek: 10:00-20:00
+							Godziny przyjęć: Poniedziałek: 8:00-15:00 Wtorek: 9:00-16:00
+							Piątek: 10:00-20:00
 						</p>
 					</div>
-					<div class="rezbutton"><p class="rezbuttontext">Zarezerwuj wizytę</p></div>
+					<div class="rezerwacja">
+						<div class="rezbutton">
+							<div class="rezbuttontext">Zarezerwuj wizytę</div>
+						</div>
+					</div>
 					<div class="linia"></div>
 				</div>
 			</div>

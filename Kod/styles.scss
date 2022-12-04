@@ -1,5 +1,5 @@
 $mainColor: #2ad591;
-$secondColor: #f6f6f6;
+$secondColor: rgba(236, 233, 233, 0.918);
 *,
 *::before,
 *::after {
@@ -7,15 +7,16 @@ $secondColor: #f6f6f6;
 	margin: 0;
 	padding: 0;
 }
-body{
+
+body {
 	position: relative;
 }
-nav{
-	.fa-bars{	
+nav {
+	.fa-bars {
 		width: 4rem;
 		height: 4rem;
-		padding:14px;
-		padding-top:11px;
+		padding: 14px;
+		padding-top: 11px;
 		border-radius: 40%;
 		background-color: white;
 		position: fixed;
@@ -23,7 +24,7 @@ nav{
 		top: 20px;
 		right: 20px;
 		font-size: 2.5rem;
-		color:$mainColor;
+		color: $mainColor;
 		border-style: groove;
 		border-color: #f6f6f65d;
 		border-left: none;
@@ -37,37 +38,42 @@ nav{
 	//background-color: $secondColor;
 	background-image: url(../img/Przechwytywanie.PNG);
 	background-size: cover;
-	background-position: center;	
-
+	background-position: center;
 }
 .mainpage {
 	position: relative;
-	.carousel {
+	background-color: $secondColor;
+	.carousel-item {
 		height: 30vh;
-		background-color: black;
-	}
-	.specbutton{
-		position: relative;
-		height: 7vh;
-		width: 300px;
-		left: 45px;
-		margin-top: 5%;
-		border-radius: 25px;
-		color: white;
-		background-color: $mainColor;
-		.specbuttontext {
-			position: absolute;
-			top: 50%;
-			left: 45%;
-			transform: translate(-50%, -50%);
-			font-size: 1rem;
+		img {
+			height: 30vh;
 		}
-		.fa-caret-down {
+	}
+	.specjalizacja {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.specbutton {
+			position: relative;
+			height: 7vh;
+			width: 300px;
+			margin-top: 5%;
+			border-radius: 25px;
+			color: white;
+			background-color: $mainColor;
+			.specbuttontext {
+				position: absolute;
+				top: 50%;
+				left: 45%;
+				transform: translate(-50%, -50%);
+			}
+		}
+		.fa-chevron-down {
 			position: absolute;
 			top: 50%;
 			left: 85%;
 			transform: translate(-50%, -50%);
-			font-size: 2rem;
+			font-size: 1.5rem;
 		}
 	}
 	.nasi {
@@ -87,60 +93,58 @@ nav{
 			background-color: grey;
 		}
 	}
-	.list{
+	.list {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		.worker{
+		.worker {
 			position: relative;
 			height: 350px;
 			width: 40vh;
 			margin-bottom: 40px;
-			.image{
-				float:left;
+			.image {
+				float: left;
 				background-color: black;
 				height: 200px;
 				width: 40vw;
 				margin-right: 5px;
 			}
-			.info{
+			.info {
 				background-color: #2ad591;
 				font-size: 1.2rem;
-				height:200px;
+				height: 200px;
 				.id {
-				}	
+				}
 			}
-			.workhours{
-				
-				//position: absolute;	
-				top:220px;
+			.workhours {
+				//position: absolute;
+				top: 220px;
 				text-align: left;
-				}
-			.rezbutton{
-				//position: relative;
-				height: 60px;
-				width: 86vw;
-				//top: 280px;
-				//left: 20px;	
-				border-radius: 25px;
-				background-color: $mainColor;
-				//align-content: center;
-				//justify-content: center;
-				.rezbuttontext{
-					
-					position: absolute;
-					top: 84%;
-					left: 50%;
-					transform: translate(-50%,-50%);
+			}
+			.rezerwacja {
+				display: flex;
+				justify-content: center;
+				.rezbutton {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 7vh;
+					width: 70vw;
+					margin-top: 5%;
+					border-radius: 25px;
 					color: white;
+					background-color: $mainColor;
+					.rezbuttontext {
+						color: white;
+					}
 				}
 			}
-			.linia{
-			position: absolute;
-			height: 0.1vh;
-			width: 40vh;
-			top: 360px;
-			background-color: grey;
+			.linia {
+				position: absolute;
+				height: 0.1vh;
+				width: 40vh;
+				top: 360px;
+				background-color: grey;
 			}
 		}
 	}
