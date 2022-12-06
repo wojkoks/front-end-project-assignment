@@ -33,8 +33,9 @@ body {
     height: 50vh;
     padding-left: 20px;
     padding-right: 20px;
-    background-image: url(../img/Przechwytywanie.PNG);
-    background-size: cover;
+    background-image: url(../img/logo_alpha.png);
+    background-color: #2c2c2c;
+    background-size: contain;
     background-position: center;
   }
   .mainpage {
@@ -109,21 +110,23 @@ body {
   .mainpage .list .worker .worker-top {
     display: flex;
   }
-  .mainpage .list .worker .worker-top .image img {
-    height: 23vh;
-    width: 40vw;
-    margin-top: 5%;
+  .mainpage .list .worker .worker-top .image {
     margin-left: 5%;
+    margin-top: 5%;
+  }
+  .mainpage .list .worker .worker-top .image img {
+    height: 22vh;
+    width: 35vw;
     border-radius: 5px;
-    background-size: contain;
   }
   .mainpage .list .worker .worker-top .info {
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: left;
+    padding: 2vw;
     margin-left: 2vw;
     height: 23vh;
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .mainpage .list .worker .workhours {
     margin-top: 5%;
@@ -140,7 +143,6 @@ body {
     align-items: center;
     height: 7vh;
     width: 70vw;
-    margin-top: 5%;
     border-radius: 25px;
     color: white;
     background-color: #2ad591;
@@ -156,6 +158,39 @@ body {
     background-color: grey;
   }
   .footer {
-    color: blue;
+    display: flex;
+    background-color: #464646;
+    width: 100vw;
+    height: 30vh;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer .footerlogo {
+    background-image: url("../img/logo_alpha.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vh;
+    width: 33vw;
+  }
+  .footer .linia {
+    width: 0.1vh;
+    height: 20vh;
+    background-color: white;
+  }
+  .footer .help {
+    height: 20vh;
+    width: 34vw;
+  }
+  .footer .help .nfz {
+    font-weight: bold;
+  }
+  .footer .copyright {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    font-size: 0.6rem;
+    font-weight: bold;
   }
 }/*# sourceMappingURL=styles.css.map */
