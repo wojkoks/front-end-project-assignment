@@ -1,5 +1,5 @@
 $mainColor: #2ad591;
-$secondColor: #f6f6f6;
+$secondColor: rgba(236, 233, 233, 0.918);
 *,
 *::before,
 *::after {
@@ -7,141 +7,158 @@ $secondColor: #f6f6f6;
 	margin: 0;
 	padding: 0;
 }
-body{
-	position: relative;
-}
-nav{
-	.fa-bars{	
-		width: 4rem;
-		height: 4rem;
-		padding:14px;
-		padding-top:11px;
-		border-radius: 40%;
-		background-color: white;
-		position: fixed;
-		z-index: 3;
-		top: 20px;
-		right: 20px;
-		font-size: 2.5rem;
-		color:$mainColor;
-		border-style: groove;
-		border-color: #f6f6f65d;
-		border-left: none;
-		border-bottom: none;
-	}
-}
-.header {
-	height: 50vh;
-	padding-left: 20px;
-	padding-right: 20px;
-	//background-color: $secondColor;
-	background-image: url(../img/Przechwytywanie.PNG);
-	background-size: cover;
-	background-position: center;	
 
-}
-.mainpage {
+body {
 	position: relative;
-	.carousel {
-		height: 30vh;
-		background-color: black;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+	nav {
+		.fa-bars {
+			width: 4rem;
+			height: 4rem;
+			padding: 14px;
+			padding-top: 11px;
+			border-radius: 40%;
+			background-color: white;
+			position: fixed;
+			z-index: 3;
+			top: 20px;
+			right: 20px;
+			font-size: 2.5rem;
+			color: $mainColor;
+			border-style: groove;
+			border-color: #f6f6f65d;
+			border-left: none;
+			border-bottom: none;
+		}
 	}
-	.specbutton{
+	.header {
+		height: 50vh;
+		padding-left: 20px;
+		padding-right: 20px;
+		//background-color: $secondColor;
+		background-image: url(../img/Przechwytywanie.PNG);
+		background-size: cover;
+		background-position: center;
+	}
+	.mainpage {
 		position: relative;
-		height: 7vh;
-		width: 300px;
-		left: 45px;
-		margin-top: 5%;
-		border-radius: 25px;
-		color: white;
-		background-color: $mainColor;
-		.specbuttontext {
-			position: absolute;
-			top: 50%;
-			left: 45%;
-			transform: translate(-50%, -50%);
-			font-size: 1rem;
-		}
-		.fa-caret-down {
-			position: absolute;
-			top: 50%;
-			left: 85%;
-			transform: translate(-50%, -50%);
-			font-size: 2rem;
-		}
-	}
-	.nasi {
-		position: relative;
-		height: 7vh;
-		margin-top: 5%;
-		.nasiTitle {
-			text-align: center;
-		}
-		.linia {
-			position: absolute;
-			height: 0.1vh;
-			width: 40vh;
-			top: 80%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			background-color: grey;
-		}
-	}
-	.list{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		.worker{
-			position: relative;
-			height: 350px;
-			width: 40vh;
-			margin-bottom: 40px;
-			.image{
-				float:left;
-				background-color: black;
-				height: 200px;
-				width: 40vw;
-				margin-right: 5px;
+		background-color: $secondColor;
+		.carousel-item {
+			height: 30vh;
+			img {
+				height: 30vh;
 			}
-			.info{
-				//background-color: #2ad591;
-				font-size: 1.2rem;
-				height:200px;
-				.id {
-					color:pink;
-				}	
-			}
-			.workhours{
-				padding-top: 15px;
-				//position: absolute;	
-				top:220px;
-				text-align: left;
-				}
-			.rezbutton{
-				//position: relative;
-				height: 60px;
-				width: 86vw;
-				//top: 280px;
-				//left: 20px;	
+		}
+		.specjalizacja {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.specbutton {
+				position: relative;
+				height: 7vh;
+				width: 300px;
+				margin-top: 5%;
 				border-radius: 25px;
+				color: white;
 				background-color: $mainColor;
-				//align-content: center;
-				//justify-content: center;
-				.rezbuttontext{
-					
+				.specbuttontext {
 					position: absolute;
-					top: 88%;
-					left: 50%;
-					transform: translate(-50%,-50%);
-					color: white;
+					top: 50%;
+					left: 45%;
+					transform: translate(-50%, -50%);
 				}
 			}
-			.linia{
-			position: absolute;
-			height: 0.1vh;
-			width: 40vh;
-			top: 360px;
-			background-color: grey;
+			.fa-chevron-down {
+				position: absolute;
+				top: 50%;
+				left: 85%;
+				transform: translate(-50%, -50%);
+				font-size: 1.5rem;
+			}
+		}
+		.nasi {
+			position: relative;
+			height: 7vh;
+			margin-top: 5%;
+			.nasiTitle {
+				text-align: center;
+			}
+			.linia {
+				position: absolute;
+				height: 0.1vh;
+				width: 40vh;
+				top: 80%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background-color: grey;
+			}
+		}
+		.list {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.worker {
+				display: flex;
+				flex-direction: column;
+				position: relative;
+				height: 50vh;
+				width: 85vw;
+				margin-bottom: 40px;
+				background-color: white;
+				border-radius: 5px;
+				.worker-top {
+					display: flex;
+					.image {
+						img {
+							height: 23vh;
+							width: 40vw;
+							margin-top: 5%;
+							margin-left: 5%;
+							border-radius: 5px;
+							background-size: contain;
+						}
+					}
+					.info {
+						display: flex;
+						align-items: center;
+						text-align: center;
+						margin-left: 2vw;
+						height: 23vh;
+						font-size: 1.4rem;
+					}
+				}
+				.workhours {
+					margin-top: 5%;
+					margin-left: 5%;
+				}
+				.rezerwacja {
+					position: absolute;
+					bottom: 2vh;
+					left: 7.5vw;
+					.rezbutton {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						height: 7vh;
+						width: 70vw;
+						margin-top: 5%;
+						border-radius: 25px;
+						color: white;
+						background-color: $mainColor;
+						.rezbuttontext {
+							color: white;
+						}
+					}
+				}
+				.linia {
+					position: absolute;
+					top: 84%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					background-color: grey;
+				}
 			}
 		}
 	}
