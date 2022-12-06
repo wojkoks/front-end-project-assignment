@@ -105,11 +105,14 @@ nav .fa-bars {
   margin-right: 5px;
 }
 .mainpage .list .worker .info {
-  background-color: #2ad591;
   font-size: 1.2rem;
   height: 200px;
 }
+.mainpage .list .worker .info .id {
+  color: pink;
+}
 .mainpage .list .worker .workhours {
+  padding-top: 15px;
   top: 220px;
   text-align: left;
 }
@@ -121,7 +124,7 @@ nav .fa-bars {
 }
 .mainpage .list .worker .rezbutton .rezbuttontext {
   position: absolute;
-  top: 84%;
+  top: 88%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;

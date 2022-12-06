@@ -104,14 +104,15 @@ nav{
 				margin-right: 5px;
 			}
 			.info{
-				background-color: #2ad591;
+				//background-color: #2ad591;
 				font-size: 1.2rem;
 				height:200px;
 				.id {
+					color:pink;
 				}	
 			}
 			.workhours{
-				
+				padding-top: 15px;
 				//position: absolute;	
 				top:220px;
 				text-align: left;
@@ -129,7 +130,7 @@ nav{
 				.rezbuttontext{
 					
 					position: absolute;
-					top: 84%;
+					top: 88%;
 					left: 50%;
 					transform: translate(-50%,-50%);
 					color: white;
