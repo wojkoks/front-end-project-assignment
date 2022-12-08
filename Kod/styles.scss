@@ -1,5 +1,6 @@
 $mainColor: #2ad591;
 $secondColor: rgba(236, 233, 233, 0.918);
+$footerColor: #464646;
 *,
 *::before,
 *::after {
@@ -34,12 +35,13 @@ body {
 		}
 	}
 	.header {
-		height: 50vh;
+		height: 60vh;
 		padding-left: 20px;
 		padding-right: 20px;
 		//background-color: $secondColor;
-		background-image: url(../img/logo_alpha.png);
-		background-color: #2c2c2c;
+		background-color: darkslategray;
+		background-image: url(../img/PrzechwytywanieWhite.png);
+		background-repeat: no-repeat;
 		background-size:contain;
 		background-position: center;
 	}
