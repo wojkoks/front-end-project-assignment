@@ -11,7 +11,7 @@ body {
   position: relative;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
+@media (min-width: 300px) and (max-width: 539px) {
   nav .fa-bars {
     width: 4rem;
     height: 4rem;
@@ -29,13 +29,16 @@ body {
     border-color: rgba(246, 246, 246, 0.3647058824);
     border-left: none;
     border-bottom: none;
+    cursor: pointer;
   }
   .header {
-    height: 50vh;
+    height: 60vh;
     padding-left: 20px;
     padding-right: 20px;
-    background-image: url(../img/Przechwytywanie.PNG);
-    background-size: cover;
+    background-color: black;
+    background-image: url(../img/PrzechwytywanieWhite.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
   }
   .mainpage {
@@ -67,6 +70,7 @@ body {
     border-radius: 25px;
     color: white;
     background-color: #2ad591;
+    cursor: pointer;
   }
   .mainpage .specjalizacja .specbutton .specbuttontext {
     position: absolute;
@@ -122,42 +126,81 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    height: 50vh;
+    height: 70vh;
     width: 85vw;
     margin-bottom: 40px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.664);
     border-radius: 5px;
   }
   .mainpage .list .worker .worker-top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    border-bottom: 1px solid rgba(236, 233, 233, 0.918);
+  }
+  .mainpage .list .worker .worker-top .background-worker {
+    width: 100%;
+    height: 45%;
+    background-color: rgb(42, 213, 145);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(42, 213, 145)), to(rgb(70, 70, 70)));
+    background-image: linear-gradient(180deg, rgb(42, 213, 145) 0%, rgb(70, 70, 70) 100%);
+  }
+  .mainpage .list .worker .worker-top .image {
+    position: absolute;
+    top: 12.5%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
   }
   .mainpage .list .worker .worker-top .image img {
-    height: 23vh;
-    width: 40vw;
-    margin-top: 5%;
-    margin-left: 5%;
-    border-radius: 5px;
-    background-size: contain;
+    height: 170px;
+    width: 170px;
+    border: 10px solid rgba(255, 250, 250, 0.4);
+    border-radius: 50%;
   }
   .mainpage .list .worker .worker-top .info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
-    margin-left: 2vw;
-    height: 23vh;
-    font-size: 1.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 1rem;
+  }
+  .mainpage .list .worker .worker-top .info .dane1 {
+    font-weight: bold;
   }
   .mainpage .list .worker .workhours {
     margin-top: 5%;
     margin-left: 5%;
   }
   .mainpage .list .worker .rezerwacja {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: absolute;
     bottom: 2vh;
     left: 7.5vw;
@@ -172,24 +215,67 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 5px;
     height: 7vh;
     width: 70vw;
-    margin-top: 5%;
     border-radius: 25px;
+    color: grey;
+    border: solid grey;
+    cursor: pointer;
+  }
+  .mainpage .list .worker .rezerwacja .rezbutton p {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .mainpage .list .worker .rezerwacja .message {
+    border: none;
     color: white;
     background-color: #2ad591;
   }
-  .mainpage .list .worker .rezerwacja .rezbutton .rezbuttontext {
-    color: white;
+  .mainpage .list .worker .rezerwacja .number {
+    border: solid #2ad591;
+    color: #2ad591;
+    background-color: white;
   }
-  .mainpage .list .worker .linia {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #464646;
+    width: 100vw;
+    height: 30vh;
+    color: white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer .footerlogo {
+    background-image: url("../img/logo_alpha.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vh;
+    width: 33vw;
+  }
+  .footer .linia {
+    width: 0.1vh;
+    height: 20vh;
+    background-color: white;
+  }
+  .footer .help {
+    height: 20vh;
+    width: 34vw;
+  }
+  .footer .help .nfz {
+    font-weight: bold;
+  }
+  .footer .copyright {
     position: absolute;
-    height: 0.1vh;
-    width: 40vh;
-    top: 105%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    background-color: grey;
+    bottom: 3px;
+    left: 3px;
+    font-size: 0.6rem;
+    font-weight: bold;
   }
 }/*# sourceMappingURL=styles.css.map */
