@@ -13,227 +13,267 @@ body {
 	position: relative;
 }
 
-@media (min-width: 300px) and (max-width: 539px) {
+nav {
+	.fa-bars {
+		width: 4rem;
+		height: 4rem;
+		padding: 14px;
+		padding-top: 11px;
+		border-radius: 40%;
+		background-color: white;
+		position: fixed;
+		z-index: 3;
+		top: 20px;
+		right: 20px;
+		font-size: 2.5rem;
+		color: $mainColor;
+		border-style: groove;
+		border-color: #f6f6f65d;
+		border-left: none;
+		border-bottom: none;
+		cursor: pointer;
+	}
+}
+.header {
+	height: 60vh;
+	padding-left: 20px;
+	padding-right: 20px;
+	//background-color: $secondColor;
+	background-color: black;
+	background-image: url(../img/PrzechwytywanieWhite.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.mainpage {
+	position: relative;
+	background-color: $secondColor;
+	.carousel-item {
+		height: 30vh;
+		img {
+			height: 30vh;
+		}
+	}
+	.specjalizacja {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.specbutton {
+			position: relative;
+			height: 7vh;
+			width: 300px;
+			margin-top: 5%;
+			border-radius: 25px;
+			color: white;
+			background-color: $mainColor;
+			cursor: pointer;
+			.specbuttontext {
+				position: absolute;
+				top: 50%;
+				left: 45%;
+				transform: translate(-50%, -50%);
+			}
+		}
+		.fa-chevron-down {
+			position: absolute;
+			top: 50%;
+			left: 85%;
+			transform: translate(-50%, -50%);
+			font-size: 1.5rem;
+		}
+	}
+	.nasi {
+		position: relative;
+		height: 7vh;
+		margin-top: 5%;
+		.nasiTitle {
+			text-align: center;
+		}
+		.linia {
+			position: absolute;
+			height: 0.1vh;
+			width: 40vh;
+			top: 80%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: grey;
+		}
+	}
+	.list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.worker {
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			height: 70vh;
+			width: 85vw;
+			margin-bottom: 40px;
+			background-color: rgba(255, 255, 255, 0.664);
+			border-radius: 5px;
+			.worker-top {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				height: 60%;
+				background-color: white;
+				border-bottom: 1px solid $secondColor;
+				.background-worker {
+					width: 100%;
+					height: 45%;
+					background-color: rgba(42, 213, 145, 1);
+					background-image: linear-gradient(
+						180deg,
+						rgba(42, 213, 145, 1) 0%,
+						rgba(70, 70, 70, 1) 100%
+					);
+				}
+				.image {
+					position: absolute;
+					top: 12.5%;
+					left: 50%;
+					transform: translate(-50%);
+					img {
+						height: 170px;
+						width: 170px;
+						border: 10px solid rgba(255, 250, 250, 0.4);
+						border-radius: 50%;
+					}
+				}
+				.info {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					font-size: 1rem;
+					.dane1 {
+						font-weight: bold;
+					}
+					.dane2 {
+					}
+				}
+			}
+			.rezerwacja {
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				bottom: 2vh;
+				left: 7.5vw;
+				.rezbutton {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin: 5px;
+					height: 7vh;
+					width: 70vw;
+					border-radius: 25px;
+					color: grey;
+					border: solid grey;
+					cursor: pointer;
+					p {
+						font-weight: bold;
+						margin-bottom: 0;
+					}
+				}
+				.message {
+					border: none;
+					color: white;
+					background-color: $mainColor;
+				}
+				.number {
+					border: solid $mainColor;
+					color: $mainColor;
+					background-color: white;
+				}
+			}
+		}
+	}
+}
+.footer {
+	display: flex;
+	background-color: #464646;
+	width: 100vw;
+	height: 30vh;
+	color: white;
+	align-items: center;
+	justify-content: space-around;
+	.footerlogo {
+		background-image: url('../img/logo_alpha.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 20vh;
+		width: 33vw;
+	}
+	.linia {
+		width: 0.1vh;
+		height: 20vh;
+		background-color: white;
+	}
+	.help {
+		height: 20vh;
+		width: 34vw;
+		.nfz {
+			font-weight: bold;
+		}
+	}
+	.copyright {
+		position: absolute;
+		bottom: 3px;
+		left: 3px;
+		font-size: 0.6rem;
+		font-weight: bold;
+	}
+}
+@media (min-width: 992px) {
 	nav {
 		.fa-bars {
-			width: 4rem;
-			height: 4rem;
-			padding: 14px;
-			padding-top: 11px;
-			border-radius: 40%;
-			background-color: white;
-			position: fixed;
-			z-index: 3;
-			top: 20px;
-			right: 20px;
-			font-size: 2.5rem;
-			color: $mainColor;
-			border-style: groove;
-			border-color: #f6f6f65d;
-			border-left: none;
-			border-bottom: none;
-			cursor: pointer;
+			display: none;
 		}
 	}
 	.header {
-		height: 60vh;
-		padding-left: 20px;
-		padding-right: 20px;
-		//background-color: $secondColor;
-		background-color: black;
-		background-image: url(../img/PrzechwytywanieWhite.png);
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: center;
+		display: none;
 	}
 	.mainpage {
-		position: relative;
-		background-color: $secondColor;
-		.carousel-item {
-			height: 30vh;
-			img {
-				height: 30vh;
-			}
+		.carousel {
+			display: none;
 		}
 		.specjalizacja {
-			display: flex;
-			justify-content: center;
-			align-items: center;
 			.specbutton {
-				position: relative;
-				height: 7vh;
-				width: 300px;
-				margin-top: 5%;
-				border-radius: 25px;
-				color: white;
-				background-color: $mainColor;
-				cursor: pointer;
-				.specbuttontext {
-					position: absolute;
-					top: 50%;
-					left: 45%;
-					transform: translate(-50%, -50%);
-				}
-			}
-			.fa-chevron-down {
-				position: absolute;
-				top: 50%;
-				left: 85%;
-				transform: translate(-50%, -50%);
-				font-size: 1.5rem;
+				height: 50px;
+				width: 350px;
 			}
 		}
 		.nasi {
-			position: relative;
-			height: 7vh;
-			margin-top: 5%;
 			.nasiTitle {
 				text-align: center;
 			}
 			.linia {
-				position: absolute;
-				height: 0.1vh;
-				width: 40vh;
-				top: 80%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				background-color: grey;
+				width: 95%;
 			}
 		}
 		.list {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			justify-items: center;
+			column-gap: 20px;
 			.worker {
-				display: flex;
-				flex-direction: column;
-				position: relative;
-				height: 70vh;
-				width: 85vw;
-				margin-bottom: 40px;
-				background-color: rgba(255, 255, 255, 0.664);
-				border-radius: 5px;
-				.worker-top {
-					display: flex;
-					flex-direction: column;
-					width: 100%;
-					height: 60%;
-					background-color: white;
-					border-bottom: 1px solid $secondColor;
-					.background-worker {
-						width: 100%;
-						height: 45%;
-						background-color: rgba(42, 213, 145, 1);
-						background-image: linear-gradient(
-							180deg,
-							rgba(42, 213, 145, 1) 0%,
-							rgba(70, 70, 70, 1) 100%
-						);
-					}
-					.image {
-						position: absolute;
-						top: 12.5%;
-						left: 50%;
-						transform: translate(-50%);
-						img {
-							height: 170px;
-							width: 170px;
-							border: 10px solid rgba(255, 250, 250, 0.4);
-							border-radius: 50%;
-						}
-					}
-					.info {
-						display: flex;
-						flex-direction: column;
-						justify-content: center;
-						align-items: center;
-						position: absolute;
-						top: 50%;
-						left: 50%;
-						transform: translate(-50%, -50%);
-						font-size: 1rem;
-						.dane1 {
-							font-weight: bold;
-						}
-						.dane2 {
-						}
-					}
-				}
-
-				.workhours {
-					margin-top: 5%;
-					margin-left: 5%;
-				}
+				width: 500px;
+				height: 600px;
 				.rezerwacja {
-					display: flex;
-					flex-direction: column;
-					position: absolute;
-					bottom: 2vh;
-					left: 7.5vw;
+					bottom: 30px;
+					left: 45px;
 					.rezbutton {
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						margin: 5px;
-						height: 7vh;
-						width: 70vw;
-						border-radius: 25px;
-						color: grey;
-						border: solid grey;
-						cursor: pointer;
-						p {
-							font-weight: bold;
-							margin-bottom: 0;
-						}
-					}
-					.message {
-						border: none;
-						color: white;
-						background-color: $mainColor;
-					}
-					.number {
-						border: solid $mainColor;
-						color: $mainColor;
-						background-color: white;
+						height: 50px;
+						width: 400px;
 					}
 				}
 			}
-		}
-	}
-	.footer {
-		display: flex;
-		background-color: #464646;
-		width: 100vw;
-		height: 30vh;
-		color: white;
-		align-items: center;
-		justify-content: space-around;
-		.footerlogo {
-			background-image: url('../img/logo_alpha.png');
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: center;
-			height: 20vh;
-			width: 33vw;
-		}
-		.linia {
-			width: 0.1vh;
-			height: 20vh;
-			background-color: white;
-		}
-		.help {
-			height: 20vh;
-			width: 34vw;
-			.nfz {
-				font-weight: bold;
-			}
-		}
-		.copyright {
-			position: absolute;
-			bottom: 3px;
-			left: 3px;
-			font-size: 0.6rem;
-			font-weight: bold;
 		}
 	}
 }
