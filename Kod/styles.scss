@@ -39,7 +39,7 @@ nav {
 	padding-left: 20px;
 	padding-right: 20px;
 	//background-color: $secondColor;
-	background-color: black;
+	background-color: $footerColor;
 	background-image: url(../img/PrzechwytywanieWhite.png);
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -122,12 +122,7 @@ nav {
 				.background-worker {
 					width: 100%;
 					height: 45%;
-					background-color: rgba(42, 213, 145, 1);
-					background-image: linear-gradient(
-						180deg,
-						rgba(42, 213, 145, 1) 0%,
-						rgba(70, 70, 70, 1) 100%
-					);
+					background-color: #464646;
 				}
 				.image {
 					position: absolute;
@@ -138,7 +133,7 @@ nav {
 						height: 170px;
 						width: 170px;
 						border: 10px solid rgba(255, 250, 250, 0.4);
-						border-radius: 50%;
+						border-radius: 25%;
 					}
 				}
 				.info {
@@ -228,6 +223,26 @@ nav {
 		left: 3px;
 		font-size: 0.6rem;
 		font-weight: bold;
+	}
+}
+@media (max-width: 391px) {
+	.mainpage {
+		.list {
+			.worker {
+				.worker-top {
+					.image {
+						img {
+							height: 140px;
+							width: 140px;
+						}
+					}
+					.info {
+						white-space: nowrap;
+						font-size: 1.1rem;
+					}
+				}
+			}
+		}
 	}
 }
 @media (min-width: 992px) {

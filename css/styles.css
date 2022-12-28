@@ -35,7 +35,7 @@ nav .fa-bars {
   height: 60vh;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: black;
+  background-color: #464646;
   background-image: url(../img/PrzechwytywanieWhite.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -149,9 +149,7 @@ nav .fa-bars {
 .mainpage .list .worker .worker-top .background-worker {
   width: 100%;
   height: 45%;
-  background-color: rgb(42, 213, 145);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(42, 213, 145)), to(rgb(70, 70, 70)));
-  background-image: linear-gradient(180deg, rgb(42, 213, 145) 0%, rgb(70, 70, 70) 100%);
+  background-color: #464646;
 }
 .mainpage .list .worker .worker-top .image {
   position: absolute;
@@ -164,7 +162,7 @@ nav .fa-bars {
   height: 170px;
   width: 170px;
   border: 10px solid rgba(255, 250, 250, 0.4);
-  border-radius: 50%;
+  border-radius: 25%;
 }
 .mainpage .list .worker .worker-top .info {
   display: -webkit-box;
@@ -277,6 +275,16 @@ nav .fa-bars {
   font-weight: bold;
 }
 
+@media (max-width: 391px) {
+  .mainpage .list .worker .worker-top .image img {
+    height: 140px;
+    width: 140px;
+  }
+  .mainpage .list .worker .worker-top .info {
+    white-space: nowrap;
+    font-size: 1.1rem;
+  }
+}
 @media (min-width: 992px) {
   nav .fa-bars {
     display: none;

@@ -1,0 +1,138 @@
+$mainColor: #2ad591;
+$secondColor: rgba(236, 233, 233, 0.918);
+$footerColor: #464646;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+}
+nav {
+	position: sticky;
+	display: flex;
+	justify-content: space-around;
+	height: 10vh;
+	width: 100%;
+	background-color: $secondColor;
+	.logo {
+		height: 100%;
+		width: 100px;
+		background-image: url('../img/logo_alpha.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.napis {
+		position: relative;
+		width: 100px;
+		height: 100%;
+
+		h1 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: black;
+			font-size: 1.4rem;
+		}
+	}
+	.burger {
+		position: relative;
+		width: 100px;
+		height: 100%;
+		.fa-bars {
+			position: absolute;
+			top: 60%;
+			left: 80%;
+			transform: translate(-50%, -80%);
+			color: $mainColor;
+			font-size: 2rem;
+		}
+	}
+}
+.mainpage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding-top: 40px;
+	background-color: white;
+	.worker {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 90%;
+		height: 50vh;
+		background-color: $secondColor;
+		border-radius: 10px;
+		.image {
+			margin-top: 10px;
+			height: 70%;
+			width: 70%;
+			background-color: blue;
+		}
+		.info {
+			height: 30%;
+			width: 50%;
+			background-color: $footerColor;
+		}
+	}
+	.button-reason {
+		margin-top: 30px;
+		width: 90%;
+		height: 70px;
+		background-color: $mainColor;
+		border-radius: 25px;
+	}
+	#calendar {
+		margin-top: 30px;
+		width: 90%;
+		height: 90vw;
+		background-color: #464646;
+	}
+}
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	height: 30vh;
+	margin-top: 30px;
+	color: white;
+	background-color: #464646;
+	.footerlogo {
+		background-image: url('../img/logo_alpha.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 20vh;
+		width: 33vw;
+	}
+	.linia {
+		width: 0.1vh;
+		height: 20vh;
+		background-color: white;
+	}
+	.help {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 20vh;
+		width: 34vw;
+		.nfz {
+			font-weight: bold;
+		}
+	}
+	.copyright {
+		position: absolute;
+		bottom: 3px;
+		left: 3px;
+		font-size: 0.6rem;
+		color: lightgray;
+	}
+}
