@@ -1,4 +1,4 @@
-$mainColor: #2ad591;
+$mainColor: #2ad591; //#2ad591
 $secondColor: rgba(236, 233, 233, 0.918);
 $footerColor: #464646;
 *,
@@ -62,7 +62,7 @@ nav {
 	width: 100%;
 	padding-top: 40px;
 	background-color: white;
-	.worker {
+	.request {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -70,30 +70,50 @@ nav {
 		height: 50vh;
 		background-color: $secondColor;
 		border-radius: 10px;
-		.image {
-			margin-top: 10px;
-			height: 70%;
-			width: 70%;
-			background-color: blue;
+		.twojaWizyta {
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			width: 100%;
+			height: 15%;
+			background-color: $mainColor;
 		}
-		.info {
-			height: 30%;
-			width: 50%;
+		.opis {
+			width: 100%;
+			height: 85%;
+			.ciemny {
+				width: 100%;
+				height: 25%;
+				background-color: rgba(222, 222, 222, 0.918);
+			}
+			.jasny {
+				width: 100%;
+				height: 25%;
+				background-color: $secondColor;
+			}
+			.miejsce {
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+		}
+	}
+	.guziki {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 7.5%;
+		width: 90%;
+		height: 15vw;
+		.guzik {
+			height: 100%;
+			width: 47.5%;
+			border-radius: 25px;
+		}
+		.powrot {
 			background-color: $footerColor;
 		}
-	}
-	.button-reason {
-		margin-top: 30px;
-		width: 90%;
-		height: 70px;
-		background-color: $mainColor;
-		border-radius: 25px;
-	}
-	#calendar {
-		margin-top: 30px;
-		width: 90%;
-		height: 90vw;
-		background-color: #464646;
+		.potwierdz {
+			background-color: $mainColor;
+		}
 	}
 }
 .footer {
