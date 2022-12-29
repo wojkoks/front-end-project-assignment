@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  width: 100%;
+  background-color: rgba(236, 233, 233, 0.918);
+}
+nav .logo {
+  height: 100%;
+  width: 100px;
+  background-image: url("../img/logo_alpha.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+nav .napis {
+  position: relative;
+  width: 100px;
+  height: 100%;
+}
+nav .napis h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 1.4rem;
+}
+nav .burger {
+  position: relative;
+  width: 100px;
+  height: 100%;
+}
+nav .burger .fa-bars {
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  transform: translate(-50%, -80%);
+  color: #2ad591;
+  font-size: 2rem;
+}
+
+.mainpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 40px;
+  background-color: white;
+}
+.mainpage .worker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 50vh;
+  background-color: rgba(236, 233, 233, 0.918);
+  border-radius: 10px;
+}
+.mainpage .worker .image {
+  margin-top: 10px;
+  height: 70%;
+  width: 70%;
+  background-color: blue;
+}
+.mainpage .worker .info {
+  height: 30%;
+  width: 50%;
+  background-color: #464646;
+}
+.mainpage .button-reason {
+  margin-top: 30px;
+  width: 90%;
+  height: 70px;
+  background-color: #2ad591;
+  border-radius: 25px;
+}
+.mainpage #calendar {
+  margin-top: 30px;
+  width: 90%;
+  height: 90vw;
+  background-color: #464646;
+}
+
+.footer {
+  position: absolute;
+  top: 70v;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 30vh;
+  margin-top: 30px;
+  color: white;
+  background-color: #464646;
+}
+.footer .footerlogo {
+  background-image: url("../img/logo_alpha.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20vh;
+  width: 33vw;
+}
+.footer .linia {
+  width: 0.1vh;
+  height: 20vh;
+  background-color: white;
+}
+.footer .help {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20vh;
+  width: 34vw;
+}
+.footer .help .nfz {
+  font-weight: bold;
+}
+.footer .copyright {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  font-size: 0.6rem;
+  color: lightgray;
+}/*# sourceMappingURL=style1.css.map */
