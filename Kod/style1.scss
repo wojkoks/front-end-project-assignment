@@ -1,6 +1,7 @@
 $mainColor: #2ad591;
 $secondColor: rgba(236, 233, 233, 0.918);
 $footerColor: #464646;
+$thirdColor: rgba(199, 199, 199, 0.918);
 *,
 *::before,
 *::after {
@@ -13,7 +14,8 @@ body {
 	position: relative;
 }
 nav {
-	position: sticky;
+	position: fixed;
+	z-index: 1;
 	display: flex;
 	justify-content: space-around;
 	height: 10vh;
@@ -63,6 +65,7 @@ nav {
 	padding-top: 40px;
 	background-color: white;
 	.worker {
+		margin-top: 8vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -71,23 +74,58 @@ nav {
 		background-color: $secondColor;
 		border-radius: 10px;
 		.image {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			margin-top: 10px;
-			height: 70%;
+			height: 75%;
 			width: 70%;
-			background-color: blue;
+			border-bottom: 1px solid #2ad591;
+			img {
+				object-fit: cover;
+				object-position: top;
+				height: 220px;
+				width: 250px;
+				border: 2px solid $thirdColor;
+				border-radius: 5px;
+			}
 		}
 		.info {
-			height: 30%;
-			width: 50%;
-			background-color: $footerColor;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 25%;
+			width: 100%;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			.dane1 {
+				font-size: 1.1rem;
+				font-weight: bold;
+				padding-bottom: 10px;
+			}
 		}
 	}
 	.button-reason {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		margin-top: 30px;
 		width: 90%;
 		height: 70px;
 		background-color: $mainColor;
 		border-radius: 25px;
+		p {
+			font-size: 1.5rem;
+			color: white;
+		}
+		.fa-chevron-down {
+			position: absolute;
+			right: 40px;
+			color: white;
+			font-size: 1.5rem;
+		}
 	}
 	#calendar {
 		margin-top: 30px;

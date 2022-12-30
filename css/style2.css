@@ -12,7 +12,7 @@ body {
 }
 
 nav {
-  position: sticky;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,6 +75,7 @@ nav .burger .fa-bars {
   background-color: white;
 }
 .mainpage .request {
+  margin-top: 9vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,11 +92,24 @@ nav .burger .fa-bars {
   border-radius: 10px;
 }
 .mainpage .request .twojaWizyta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 100%;
   height: 15%;
   background-color: #2ad591;
+}
+.mainpage .request .twojaWizyta p {
+  font-size: 1.3rem;
+  color: white;
 }
 .mainpage .request .opis {
   width: 100%;
@@ -135,10 +149,28 @@ nav .burger .fa-bars {
   border-radius: 25px;
 }
 .mainpage .guziki .powrot {
+  position: relative;
+  color: white;
   background-color: #464646;
 }
+.mainpage .guziki .powrot p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 .mainpage .guziki .potwierdz {
+  position: relative;
+  color: white;
   background-color: #2ad591;
+}
+.mainpage .guziki .potwierdz p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .footer {

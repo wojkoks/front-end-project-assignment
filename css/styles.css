@@ -60,20 +60,38 @@ nav .fa-bars {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 3vw;
+  padding-right: 3vw;
   background-color: rgba(199, 199, 199, 0.918);
+  width: 100%;
+  height: 90%;
 }
 .mainpage .carblok .carousel {
+  position: relative;
   -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.217);
           box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.217);
-  width: 70vw;
 }
-.mainpage .carousel-item {
-  height: 30vh;
+.mainpage .carblok .carousel .carousel-item {
+  position: relative;
 }
-.mainpage .carousel-item img {
-  height: 30vh;
+.mainpage .carblok .carousel .carousel-item img {
+  aspect-ratio: 14/9;
+}
+.mainpage .carblok .carousel .carousel-item .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -27.5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 0.8rem;
+  padding-left: 5px;
+  text-align: left;
+}
+.mainpage .carblok .carousel .carousel-indicators {
+  position: absolute;
+  top: 10px;
 }
 .mainpage .specjalizacja {
   display: -webkit-box;
@@ -183,6 +201,10 @@ nav .fa-bars {
           transform: translate(-50%);
 }
 .mainpage .list .worker .worker-top .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   height: 170px;
   width: 170px;
   border: 10px solid rgba(255, 250, 250, 0.4);
@@ -212,7 +234,12 @@ nav .fa-bars {
 .mainpage .list .worker .worker-top .info .dane1 {
   font-weight: bold;
 }
-.mainpage .list .worker .rezerwacja {
+.mainpage .list .worker .worker-top .info .dane2 {
+  margin-top: -10px;
+}
+.mainpage .list .worker .worker-bottom {
+  width: 100%;
+  height: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,11 +247,14 @@ nav .fa-bars {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
-  bottom: 2vh;
-  left: 7.5vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.mainpage .list .worker .rezerwacja .rezbutton {
+.mainpage .list .worker .worker-bottom .rezbutton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,16 +272,16 @@ nav .fa-bars {
   border: solid grey;
   cursor: pointer;
 }
-.mainpage .list .worker .rezerwacja .rezbutton p {
+.mainpage .list .worker .worker-bottom .rezbutton p {
   font-weight: bold;
   margin-bottom: 0;
 }
-.mainpage .list .worker .rezerwacja .message {
+.mainpage .list .worker .worker-bottom .message {
   border: none;
   color: white;
   background-color: #2ad591;
 }
-.mainpage .list .worker .rezerwacja .number {
+.mainpage .list .worker .worker-bottom .number {
   border: solid #2ad591;
   color: #2ad591;
   background-color: white;
@@ -299,14 +329,20 @@ nav .fa-bars {
   font-weight: bold;
 }
 
-@media (max-width: 391px) {
+@media (max-width: 375px) {
   .mainpage .list .worker .worker-top .image img {
     height: 140px;
     width: 140px;
   }
   .mainpage .list .worker .worker-top .info {
     white-space: nowrap;
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .mainpage .carblok .carousel .carousel-item .carousel-caption {
+    bottom: -30px;
+    font-size: 0.75rem;
   }
 }
 @media (min-width: 992px) {
@@ -338,11 +374,11 @@ nav .fa-bars {
     width: 500px;
     height: 600px;
   }
-  .mainpage .list .worker .rezerwacja {
+  .mainpage .list .worker .worker-bottom {
     bottom: 30px;
     left: 45px;
   }
-  .mainpage .list .worker .rezerwacja .rezbutton {
+  .mainpage .list .worker .worker-bottom .rezbutton {
     height: 50px;
     width: 400px;
   }
