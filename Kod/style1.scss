@@ -2,6 +2,9 @@ $mainColor: #2ad591;
 $secondColor: rgba(236, 233, 233, 0.918);
 $footerColor: #464646;
 $thirdColor: rgba(199, 199, 199, 0.918);
+$footerColor: #464646;
+$stspec: #5C9099;
+$ndspec: #CC1465;
 *,
 *::before,
 *::after {
@@ -80,14 +83,16 @@ nav {
 			margin-top: 10px;
 			height: 75%;
 			width: 70%;
-			border-bottom: 1px solid #2ad591;
+			//border-bottom: 1px solid #2ad591;
 			img {
 				object-fit: cover;
 				object-position: top;
 				height: 220px;
 				width: 250px;
-				border: 2px solid $thirdColor;
-				border-radius: 5px;
+				margin-left: 6.5px;
+				box-shadow: -10px -10px 0px 3px $ndspec;
+				// border: 2px solid $thirdColor;
+				// border-radius: 5px;
 			}
 		}
 		.info {

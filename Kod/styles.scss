@@ -1,7 +1,17 @@
-$mainColor: #2ad591;
-$secondColor: rgba(236, 233, 233, 0.918);
-$thirdColor: rgba(199, 199, 199, 0.918);
-$footerColor: #464646;
+//$mainColor: #2ad591;
+//$secondColor: rgba(236, 233, 233, 0.918);
+//$thirdColor: rgba(199, 199, 199, 0.918);
+// $footerColor: #464646;
+// $stspec: #5C9099;
+// $ndspec: #CC1465;
+
+/* Color Theme Swatches in RGBA */
+$mainColor: rgba(17,61,89, 1);
+$footerColor: rgba(17,61,89, 1);
+$secondColor: rgba(208,212,216, 1);
+$thirdColor: rgba(232,238,242, 1);
+$stspec: rgba(140,86,74, 1);
+$ndspec: rgba(114,78,69, 1);
 *,
 *::before,
 *::after {
@@ -148,29 +158,39 @@ nav {
 			display: flex;
 			flex-direction: column;
 			position: relative;
-			height: 70vh;
 			width: 85vw;
+			height: 160vw;
 			margin-bottom: 40px;
 			background-color: rgba(255, 255, 255, 0.664);
-			border-radius: 5px;
+			border-radius: 50px;
 			.worker-top {
 				display: flex;
 				flex-direction: column;
 				width: 100%;
 				height: 60%;
-				background-color: white;
-				border-bottom: 1px solid $secondColor;
-				.background-worker {
+				.background-worker{
+					border-top-right-radius: 50px;
+					border-top-left-radius: 50px;
+					width: 100%;
+					height: 45%;
+					background-color: $mainColor;
+					// background-position: 100px;
+					// background-image: linear-gradient(
+					// 	180deg,
+					// 	$secondColor 0%,
+					// 	$mainColor 100%
+					// );
+				}
+				.ped{
 					width: 100%;
 					height: 45%;
 					background-position: 100px;
 					//background-color: #464646;
-					background-color: rgba(42, 213, 145, 1);
-					background-image: linear-gradient(
-						180deg,
-						rgba(42, 213, 145, 1) 0%,
-						rgba(110, 116, 110, 1) 100%
-					);
+					// background-image: linear-gradient(
+					// 	180deg,
+					// 	$secondColor 0%,
+					// 	$mainColor 100%,
+					// );
 				}
 				.image {
 					position: absolute;
@@ -182,32 +202,70 @@ nav {
 						object-position: top;
 						height: 170px;
 						width: 170px;
-						border: 10px solid rgba(255, 250, 250, 0.4);
+						box-shadow: 0px 0px 10px $mainColor;
+						//border: 0px solid $mainColor;
 						border-radius: 25%;
 						// position:
 					}
 				}
+				.spacer {
+					width:100%;
+					height: 90px;
+				}
 				.info {
 					display: flex;
+					width:100%;
+					height:auto;
 					flex-direction: column;
 					justify-content: center;
-					align-items: center;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
+					align-items:center;
+					// position: absolute;
+					// top: 55%;
+					// left: 50%;
+					// transform: translate(-50%, -50%);
 					font-size: 1rem;
 					.dane1 {
 						font-weight: bold;
 					}
 					.dane2 {
+						display: flex;
+						flex-wrap: wrap;
+						width:70vw;
+						max-width: 70vw;
 						margin-top: -10px;
+						.perk{
+							display: flex;
+							align-items: center;
+							background-color: $ndspec;
+							width:100%;
+							inline-size: min-content;
+							height: 2rem;
+							box-shadow: 0px 0px 4px black;
+							border-radius: 20px;
+							//padding-left: 3px;
+							//padding-right: 1px;
+							margin: 3px;
+							font-size: 0.8rem;
+							white-space: nowrap;
+							color: $thirdColor;
+							.pilka {
+								white-space: nowrap;
+								width: 1rem;
+								height: 1rem;
+								background-color: $thirdColor;
+								border-radius: 50%;
+								margin:0.5rem;
+							}
+							.pertext{
+								margin-right: 10px;
+							}
+						}
 					}
 				}
 			}
 			.worker-bottom {
 				width: 100%;
-				height: 40%;
+				height: auto;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -245,7 +303,7 @@ nav {
 
 .footer {
 	display: flex;
-	background-color: #464646;
+	background-color: $footerColor;
 	width: 100%;
 	height: 30vh;
 	color: white;

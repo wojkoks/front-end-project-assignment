@@ -11,8 +11,8 @@ body {
 }
 
 nav {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  z-index: 1;
   display: flex;
   justify-content: space-around;
   height: 10vh;
@@ -63,6 +63,7 @@ nav .burger .fa-bars {
   background-color: white;
 }
 .mainpage .worker {
+  margin-top: 8vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,22 +73,58 @@ nav .burger .fa-bars {
   border-radius: 10px;
 }
 .mainpage .worker .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 10px;
-  height: 70%;
+  height: 75%;
   width: 70%;
-  background-color: blue;
+}
+.mainpage .worker .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  height: 220px;
+  width: 250px;
+  margin-left: 6.5px;
+  box-shadow: -10px -10px 0px 3px #CC1465;
 }
 .mainpage .worker .info {
-  height: 30%;
-  width: 50%;
-  background-color: #464646;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.mainpage .worker .info .dane1 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-bottom: 10px;
 }
 .mainpage .button-reason {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 30px;
   width: 90%;
   height: 70px;
   background-color: #2ad591;
   border-radius: 25px;
+}
+.mainpage .button-reason p {
+  font-size: 1.5rem;
+  color: white;
+}
+.mainpage .button-reason .fa-chevron-down {
+  position: absolute;
+  right: 40px;
+  color: white;
+  font-size: 1.5rem;
 }
 .mainpage #calendar {
   margin-top: 30px;

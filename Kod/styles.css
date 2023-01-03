@@ -1,3 +1,4 @@
+/* Color Theme Swatches in RGBA */
 *,
 *::before,
 *::after {
@@ -8,6 +9,8 @@
 
 body {
   position: relative;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 
 nav .fa-bars {
@@ -48,7 +51,7 @@ nav .fa-bars {
 }
 
 .mainpage {
-  background-color: rgba(236, 233, 233, 0.918);
+  background-color: rgb(208, 212, 216);
   position: relative;
 }
 .mainpage .carblok {
@@ -58,15 +61,35 @@ nav .fa-bars {
   padding-bottom: 5%;
   padding-left: 3vw;
   padding-right: 3vw;
-  background-color: rgba(199, 199, 199, 0.918);
+  background-color: rgb(232, 238, 242);
   width: 100%;
   height: 90%;
 }
 .mainpage .carblok .carousel {
+  position: relative;
   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.217);
 }
+.mainpage .carblok .carousel .carousel-item {
+  position: relative;
+}
 .mainpage .carblok .carousel .carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
   aspect-ratio: 14/9;
+}
+.mainpage .carblok .carousel .carousel-item .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -27.5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 0.8rem;
+  padding-left: 5px;
+  text-align: left;
+}
+.mainpage .carblok .carousel .carousel-indicators {
+  position: absolute;
+  top: 10px;
 }
 .mainpage .specjalizacja {
   display: flex;
@@ -80,7 +103,7 @@ nav .fa-bars {
   margin-top: 5%;
   border-radius: 25px;
   color: white;
-  background-color: #2ad591;
+  background-color: rgb(17, 61, 89);
   cursor: pointer;
 }
 .mainpage .specjalizacja .specbutton .specbuttontext {
@@ -122,25 +145,29 @@ nav .fa-bars {
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 70vh;
   width: 85vw;
+  height: 160vw;
   margin-bottom: 40px;
   background-color: rgba(255, 255, 255, 0.664);
-  border-radius: 5px;
+  border-radius: 50px;
 }
 .mainpage .list .worker .worker-top {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 60%;
-  background-color: white;
-  border-bottom: 1px solid rgba(236, 233, 233, 0.918);
 }
 .mainpage .list .worker .worker-top .background-worker {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  width: 100%;
+  height: 45%;
+  background-color: rgb(17, 61, 89);
+}
+.mainpage .list .worker .worker-top .ped {
   width: 100%;
   height: 45%;
   background-position: 100px;
-  background-color: rgba(199, 199, 199, 0.918);
 }
 .mainpage .list .worker .worker-top .image {
   position: absolute;
@@ -149,33 +176,74 @@ nav .fa-bars {
   transform: translate(-50%);
 }
 .mainpage .list .worker .worker-top .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   height: 170px;
   width: 170px;
-  border: 10px solid rgba(255, 250, 250, 0.4);
+  box-shadow: 0px 0px 10px rgb(17, 61, 89);
   border-radius: 25%;
+}
+.mainpage .list .worker .worker-top .spacer {
+  width: 100%;
+  height: 90px;
 }
 .mainpage .list .worker .worker-top .info {
   display: flex;
+  width: 100%;
+  height: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 1rem;
 }
 .mainpage .list .worker .worker-top .info .dane1 {
   font-weight: bold;
 }
-.mainpage .list .worker .rezerwacja {
+.mainpage .list .worker .worker-top .info .dane2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70vw;
+  max-width: 70vw;
+  margin-top: -10px;
+}
+.mainpage .list .worker .worker-top .info .dane2 .perk {
+  display: flex;
+  align-items: center;
+  background-color: rgb(114, 78, 69);
+  width: 100%;
+  inline-size: -webkit-min-content;
+  inline-size: -moz-min-content;
+  inline-size: min-content;
+  height: 2rem;
+  box-shadow: 0px 0px 4px black;
+  border-radius: 20px;
+  margin: 3px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  color: rgb(232, 238, 242);
+}
+.mainpage .list .worker .worker-top .info .dane2 .perk .pilka {
+  white-space: nowrap;
+  width: 1rem;
+  height: 1rem;
+  background-color: rgb(232, 238, 242);
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+.mainpage .list .worker .worker-top .info .dane2 .perk .pertext {
+  margin-right: 10px;
+}
+.mainpage .list .worker .worker-bottom {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  bottom: 2vh;
-  left: 7.5vw;
+  align-items: center;
+  justify-content: center;
 }
-.mainpage .list .worker .rezerwacja .rezbutton {
+.mainpage .list .worker .worker-bottom .rezbutton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,24 +255,24 @@ nav .fa-bars {
   border: solid grey;
   cursor: pointer;
 }
-.mainpage .list .worker .rezerwacja .rezbutton p {
+.mainpage .list .worker .worker-bottom .rezbutton p {
   font-weight: bold;
   margin-bottom: 0;
 }
-.mainpage .list .worker .rezerwacja .message {
+.mainpage .list .worker .worker-bottom .message {
   border: none;
   color: white;
-  background-color: #2ad591;
+  background-color: rgb(17, 61, 89);
 }
-.mainpage .list .worker .rezerwacja .number {
-  border: solid #2ad591;
-  color: #2ad591;
+.mainpage .list .worker .worker-bottom .number {
+  border: solid rgb(17, 61, 89);
+  color: rgb(17, 61, 89);
   background-color: white;
 }
 
 .footer {
   display: flex;
-  background-color: #464646;
+  background-color: rgb(17, 61, 89);
   width: 100%;
   height: 30vh;
   color: white;
@@ -239,14 +307,20 @@ nav .fa-bars {
   font-weight: bold;
 }
 
-@media (max-width: 391px) {
+@media (max-width: 375px) {
   .mainpage .list .worker .worker-top .image img {
     height: 140px;
     width: 140px;
   }
   .mainpage .list .worker .worker-top .info {
     white-space: nowrap;
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .mainpage .carblok .carousel .carousel-item .carousel-caption {
+    bottom: -30px;
+    font-size: 0.75rem;
   }
 }
 @media (min-width: 992px) {
@@ -278,11 +352,11 @@ nav .fa-bars {
     width: 500px;
     height: 600px;
   }
-  .mainpage .list .worker .rezerwacja {
+  .mainpage .list .worker .worker-bottom {
     bottom: 30px;
     left: 45px;
   }
-  .mainpage .list .worker .rezerwacja .rezbutton {
+  .mainpage .list .worker .worker-bottom .rezbutton {
     height: 50px;
     width: 400px;
   }
