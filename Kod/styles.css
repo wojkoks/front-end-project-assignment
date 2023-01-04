@@ -9,8 +9,9 @@
 
 body {
   position: relative;
-  font-family: "Lato", sans-serif;
+  font-family: "Sevillana", "Lato", sans-serif;
   font-weight: 400;
+  height: 100%;
 }
 
 nav .fa-bars {
@@ -146,7 +147,7 @@ nav .fa-bars {
   flex-direction: column;
   position: relative;
   width: 85vw;
-  height: 160vw;
+  height: 70vh;
   margin-bottom: 40px;
   background-color: rgba(255, 255, 255, 0.664);
   border-radius: 50px;
@@ -251,8 +252,9 @@ nav .fa-bars {
   height: 7vh;
   width: 70vw;
   border-radius: 25px;
-  color: grey;
-  border: solid grey;
+  color: white;
+  border: none;
+  background-color: rgb(17, 61, 89);
   cursor: pointer;
 }
 .mainpage .list .worker .worker-bottom .rezbutton p {
@@ -268,6 +270,7 @@ nav .fa-bars {
   border: solid rgb(17, 61, 89);
   color: rgb(17, 61, 89);
   background-color: white;
+  margin-bottom: 0px;
 }
 
 .footer {

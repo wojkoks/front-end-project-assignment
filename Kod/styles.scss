@@ -23,8 +23,9 @@ $ndspec: rgba(114,78,69, 1);
 }
 body {
 	position: relative;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Sevillana','Lato', sans-serif;
 	font-weight: 400;
+	height:100%;
 }
 nav {
 	//-webkit-filter: invert(100%);
@@ -50,8 +51,6 @@ nav {
 	height: 80vh;
 	padding-left: 20px;
 	padding-right: 20px;
-	//background-color: $secondColor;
-	//background-color: $footerColor;
 	background-image: url(../img/tlo.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -159,7 +158,7 @@ nav {
 			flex-direction: column;
 			position: relative;
 			width: 85vw;
-			height: 160vw;
+			height: 70vh;
 			margin-bottom: 40px;
 			background-color: rgba(255, 255, 255, 0.664);
 			border-radius: 50px;
@@ -278,8 +277,9 @@ nav {
 					height: 7vh;
 					width: 70vw;
 					border-radius: 25px;
-					color: grey;
-					border: solid grey;
+					color: white;
+					border: none;
+					background-color: $mainColor;
 					cursor: pointer;
 					p {
 						font-weight: bold;
@@ -295,6 +295,7 @@ nav {
 					border: solid $mainColor;
 					color: $mainColor;
 					background-color: white;
+					margin-bottom: 0px;
 				}
 			}
 		}
