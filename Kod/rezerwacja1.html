@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./style1.css" />
+		<link rel="stylesheet" href="../kalendarz/CKalendarz.css" />
 		<script
 			src="https://kit.fontawesome.com/53b832894a.js"
 			crossorigin="anonymous"
@@ -26,20 +27,52 @@
 			<div class="burger"><div class="fa-solid fa-bars"></div></div>
 		</nav>
 		<div class="mainpage">
-			<div class="worker request">
-				<div class="image">
-					<img src="/img/doktor1.png" alt="doktor" />
+			<div class="worker">
+				<div class="worker-top">
+					<div class="background-worker ped">
+						<div class="image">
+							<img src="../img/doktor1.png" alt="doktor"  />
+						</div>
+					</div>
+					<div class="spacer"></div>
+					<div class="info">
+						<p class="dane1">Bartosz Kopiczak </p>
+						<div class="dane2">
+							<div class="perk">
+								<div class="pilka"></div>
+								<div class="pertext">Pediatra🧒</div>
+							</div>
+							<div class="perk">
+								<div class="pilka"></div>
+								<div class="pertext">kox🏋️‍♂️</div>
+							</div> 
+							<div class="perk">
+								<div class="pilka"></div>
+								<div class="pertext">Pracuje w weekendy</div>
+							</div> 
+						</div>
+					</div>
 				</div>
-				<div class="info">
-					<div class="dane1">Bartosz Kopiczak</div>
-					<div class="dane2">Pediatra</div>
+				<div class="worker-bottom">
+					<div class="rezbutton number">
+						<p>+48 565 565 565</p>
+					</div>
 				</div>
 			</div>
 			<div class="button-reason">
 				<p>Powód wizyty</p>
 				<i class="fa-solid fa-chevron-down"></i>
 			</div>
-			<div id="calendar"></div>
+			<div id="calendar">
+				<div id="kal_body">
+					<div class="kal_week"><div class="kal_day kal_day_ntm"><div class="dn">2</div></div><div class="kal_day kal_day_ntm"><div class="dn">2</div></div><div class="kal_day kal_day_ntm"><div class="dn">2</div></div><div class="kal_day kal_day_ntm"><div class="dn">2</div></div><div class="kal_day kal_day_ntm"><div class="dn">2</div></div><div class="kal_day kal_day_ntm"><div class="dn">2</div></div><div class="kal_day_c"><div class="dn">2</div></div></div>
+					<div class="kal_week"><div class="kal_day kal_day_o"><div class="dn">2</div><div class="appo" onclick="">2 wolne<br/> terminy</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day_c"><div class="dn">2</div></div></div>
+					<div class="kal_week"><div class="kal_day kal_day_o"><div class="dn">2</div><div class="appo" onclick="">2 wolne<br/> terminy</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day_c"><div class="dn">2</div></div></div>
+					<div class="kal_week"><div class="kal_day kal_day_o"><div class="dn">2</div><div class="appo" onclick="">2 wolne<br/> terminy</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day_c"><div class="dn">2</div></div></div>
+					<div class="kal_week"><div class="kal_day kal_day_o"><div class="dn">2</div><div class="appo" onclick="">2 wolne<br/> terminy</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day"><div class="dn">2</div></div><div class="kal_day_c"><div class="dn">2</div></div></div>
+					<div class="kal_week"><div class="kal_day kal_day"><div class="dn">2</div></div><div class="kal_day kal_day"><div class="dn">2</div></div><div class="kal_day kal_day_ntm"><div class="dn">2</div></div><div class="kal_day kal_day_ntm"><div class="dn">2</div></div><div class="kal_day kal_day_ntm"><div class="dn">2</div></div><div class="kal_day kal_day_ntm"><div class="dn">2</div></div><div class="kal_day_c kal_day_ntm"><div class="dn">2</div></div></div>
+				</div>
+			</div>
 			<div class="podsumowanie"></div>
 		</div>
 		<div class="footer">

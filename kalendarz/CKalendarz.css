@@ -1,69 +1,106 @@
 #kal_body {
-    min-width:400px;
-    width: 50vw;
-    background-color: rgba(232,238,242, 1);
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(208, 212, 216);
+  justify-content: center;
+  border-radius: 10px;
 }
-.kal_week{
-    display: flex;
-    
-    flex-direction: row;
-    justify-content: center;
-    padding: 1vw;
-    margin:0;
+#kal_body .kal_week {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1vw;
+  margin: 0;
 }
-.kal_day{
-    width:5vw;
-    height: 5vw;
-    padding: 0;
-    margin: 0.5vw;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    border-radius: 0.25vw;
-    background-color: white;
+#kal_body .kal_week .kal_day {
+  display: flex;
+  flex-direction: column;
+  width: 14.28%;
+  height: 10vw;
+  padding: 0;
+  margin: 0.5vw;
+  border-radius: 15%;
+  justify-content: center;
+  background-color: white;
+  line-height: 2rem;
 }
-
-
-.kal_day_c {
-    width:5vw;
-    height: 5vw;
-    margin: 0.5vw;
-    justify-content: flex-start;
-    display: flex;
-    border-radius: 0.25vw;
-    flex-direction: column;
-    background-color: red;
-    
+#kal_body .kal_week .kal_day .dn {
+  font-size: 2rem;
+  text-align: center;
 }
-.kal_day_ntm {
-    
-    opacity:0.5;
-    
-    background-color: grey;
-    
+#kal_body .kal_week .kal_day .appo {
+  justify-content: center;
+  font-size: 2vw;
+  height: 3vw;
+  width: 100%;
 }
-.kal_day_o {
-    
-    background-color: green;
-    
+#kal_body .kal_week .kal_day_c {
+  display: flex;
+  flex-direction: column;
+  width: 14.28%;
+  height: 10vw;
+  padding: 0;
+  margin: 0.5vw;
+  border-radius: 15%;
+  justify-content: center;
+  background-color: white;
+  line-height: 2rem;
+  background-color: rgb(232, 238, 242);
 }
-.kal_day_o:hover{
-    width: 6vw;
-    height: 5.5vw;
-    margin: 0;
-    padding-top: 0.5vw;
+#kal_body .kal_week .kal_day_c .dn {
+  font-size: 2rem;
+  text-align: center;
 }
-
-.dn{
-    font-size: 1.5vw;
-    height: 2vw;
-    width: 100%;
+#kal_body .kal_week .kal_day_c .appo {
+  justify-content: center;
+  font-size: 0.75vw;
+  height: 3vw;
+  width: 100%;
 }
-.appo{
-    justify-content: center;
-    font-size: 0.75vw;
-    height: 3vw;
-    width: 100%;
+#kal_body .kal_week .kal_day_ntm {
+  opacity: 0.5;
+  background-color: grey;
 }
+#kal_body .kal_week .kal_day_ntm .dn {
+  font-size: 2rem;
+  text-align: center;
+}
+#kal_body .kal_week .kal_day_ntm .appo {
+  justify-content: center;
+  font-size: 0.75vw;
+  height: 3vw;
+  width: 100%;
+}
+#kal_body .kal_week .kal_day_o {
+  display: flex;
+  flex-direction: column;
+  width: 14.28%;
+  height: 10vw;
+  padding: 0;
+  margin: 0.5vw;
+  border-radius: 15%;
+  justify-content: center;
+  line-height: 2rem;
+  background-color: green;
+}
+#kal_body .kal_week .kal_day_o .dn {
+  font-size: 2rem;
+  text-align: center;
+}
+#kal_body .kal_week .kal_day_o .appo {
+  display: none;
+}
+#kal_body .kal_week .kal_day_o:hover .dn {
+  font-size: 2rem;
+  text-align: center;
+}
+#kal_body .kal_week .kal_day_o:hover .appo {
+  display: contents;
+  justify-content: center;
+  font-size: 0.75vw;
+  height: 3vw;
+  width: 100%;
+}/*# sourceMappingURL=CKalendarz.css.map */
