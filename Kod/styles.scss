@@ -7,6 +7,7 @@
 
 /* Color Theme Swatches in RGBA */
 $mainColor: rgba(17,61,89, 1);
+$navColor: rgb(70, 49, 43);
 $footerColor: rgba(17,61,89, 1);
 $secondColor: rgba(208,212,216, 1);
 $thirdColor: rgba(232,238,242, 1);
@@ -27,34 +28,87 @@ body {
 	font-weight: 400;
 	height:100%;
 }
+// nav {
+// 	//-webkit-filter: invert(100%);
+// 	.fa-bars {
+// 		background-color: #4646466f;
+// 		width: 4rem;
+// 		height: 4rem;
+// 		padding: 14px;
+// 		padding-top: 11px;
+// 		border-radius: 40%;
+// 		position: fixed;
+// 		z-index: 3;
+// 		top: 20px;
+// 		right: 20px;
+// 		font-size: 2.5rem;
+// 		color: transparent;
+// 		box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.38);
+// 		text-shadow: 1px 0px rgba(0, 0, 0, 0.564);
+// 		cursor: pointer;
+// 	}
+// }
 nav {
-	//-webkit-filter: invert(100%);
-	.fa-bars {
-		background-color: #4646466f;
-		width: 4rem;
-		height: 4rem;
-		padding: 14px;
-		padding-top: 11px;
-		border-radius: 40%;
-		position: fixed;
-		z-index: 3;
-		top: 20px;
-		right: 20px;
-		font-size: 2.5rem;
-		color: transparent;
-		box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.38);
-		text-shadow: 1px 0px rgba(0, 0, 0, 0.564);
-		cursor: pointer;
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: 700;
+	z-index: 3;
+	height: 10vh;
+	width: 100%;
+	background-color: $navColor;
+	box-shadow: 0px 2px 5px 0px black;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	.logo {
+		height: 100%;
+		width: 110px;
+		background-image: url('../img/logo.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: left;
 	}
+	.napis {
+		position: relative;
+		width: 100px;
+		height: 100%;
+
+		h1 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			font-size: 1.4rem;
+		}
+	}
+	.burger {
+		position: relative;
+		width: 100px;
+		height: 100%;
+		.fa-bars {
+			position: absolute;
+			top: 60%;
+			left: 60%;
+			transform: translate(-50%, -80%);
+			color: white;
+			font-size: 2rem;
+		}
+	}
+}
+.spacer{
+	width: 100%;
+	height:8vh;
 }
 .header {
 	height: 80vh;
 	padding-left: 20px;
 	padding-right: 20px;
-	background-image: url(../img/tlo.png);
+	background-image: url(../img/tlo2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: 50%;
 	justify-items: center;
 	text-align: center;
 	.fa-chevron-down {
@@ -146,7 +200,7 @@ nav {
 			top: 80%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			background-color: grey;
+			background-color: $stspec;
 		}
 	}
 	.list {
@@ -157,8 +211,9 @@ nav {
 				display: flex;
 				flex-direction: column;
 				position: relative;
-				width: 85vw;
-				height: 640px;
+				//width: 320px;
+				width: 90%;
+				height: 570px;
 				margin-bottom: 50px;
 				background-color: rgba(255, 255, 255, 0.664);
 				border-radius: 50px;
@@ -166,7 +221,7 @@ nav {
 					display: flex;
 					flex-direction: column;
 					width: 100%;
-					height: 60%;
+					height: 340px;
 					.background-worker{
 						border-top-right-radius: 50px;
 						border-top-left-radius: 50px;
@@ -175,14 +230,13 @@ nav {
 						background-color: $mainColor;
 					}
 					.ped{
-						background-color: red;
-						width: 100%;
-						height: 45%;
-						background-position: 100px;
+						// width: 100%;
+						// height: 45%;
+						// background-position: 100px;
 					}
 					.image {
 						position: absolute;
-						top: 12.5%;
+						top: 10.5%;
 						left: 50%;
 						transform: translate(-50%);
 						img {
@@ -201,7 +255,6 @@ nav {
 					.info {
 						display: flex;
 						width:100%;
-						height:auto;
 						flex-direction: column;
 						justify-content:flex-end;
 						align-items:center;
@@ -216,8 +269,7 @@ nav {
 						.dane2 {
 							display: flex;
 							flex-wrap: wrap;
-							width:70vw;
-							max-width: 70vw;
+							width:80%;
 							margin-top: -10px;
 							align-items:center;
 							.perk{
@@ -252,7 +304,7 @@ nav {
 				}
 				.worker-bottom {
 					width: 100%;
-					height: 40%;
+					height: 230px;
 					display: flex;
 					flex-direction: column;
 					align-items: center;
@@ -262,8 +314,8 @@ nav {
 						justify-content: center;
 						align-items: center;
 						margin: 5px;
-						height: 7vh;
-						width: 70vw;
+						height: 57px;
+						width: 80%;
 						border-radius: 25px;
 						color: white;
 						border: none;
@@ -286,6 +338,15 @@ nav {
 						margin-bottom: 0px;
 					}
 				}
+				.linia {
+					position: absolute;
+					height: 0.5px;
+					width: 40vh;
+					bottom: -25px;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					background-color: $stspec;
+				}
 			}
 		}
 	}
@@ -300,7 +361,7 @@ nav {
 	align-items: center;
 	justify-content: space-around;
 	.footerlogo {
-		background-image: url('../img/logo_alpha.png');
+		background-image: url('../img/logo.png');
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -324,7 +385,6 @@ nav {
 		bottom: 3px;
 		left: 3px;
 		font-size: 0.6rem;
-		font-weight: bold;
 	}
 }
 @media (max-width: 375px) {

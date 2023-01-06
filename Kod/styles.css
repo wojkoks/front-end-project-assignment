@@ -14,32 +14,68 @@ body {
   height: 100%;
 }
 
-nav .fa-bars {
-  background-color: rgba(70, 70, 70, 0.4352941176);
-  width: 4rem;
-  height: 4rem;
-  padding: 14px;
-  padding-top: 11px;
-  border-radius: 40%;
+nav {
+  display: flex;
   position: fixed;
+  justify-content: space-between;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 700;
   z-index: 3;
-  top: 20px;
-  right: 20px;
-  font-size: 2.5rem;
-  color: transparent;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.38);
-  text-shadow: 1px 0px rgba(0, 0, 0, 0.564);
-  cursor: pointer;
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(70, 49, 43);
+  box-shadow: 0px 2px 5px 0px black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+nav .logo {
+  height: 100%;
+  width: 110px;
+  background-image: url("../img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+nav .napis {
+  position: relative;
+  width: 100px;
+  height: 100%;
+}
+nav .napis h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.4rem;
+}
+nav .burger {
+  position: relative;
+  width: 100px;
+  height: 100%;
+}
+nav .burger .fa-bars {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -80%);
+  color: white;
+  font-size: 2rem;
+}
+
+.spacer {
+  width: 100%;
+  height: 8vh;
 }
 
 .header {
   height: 80vh;
   padding-left: 20px;
   padding-right: 20px;
-  background-image: url(../img/tlo.png);
+  background-image: url(../img/tlo2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 50%;
   justify-items: center;
   text-align: center;
 }
@@ -135,7 +171,7 @@ nav .fa-bars {
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: grey;
+  background-color: rgb(140, 86, 74);
 }
 .mainpage .list {
   display: flex;
@@ -146,8 +182,8 @@ nav .fa-bars {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 85vw;
-  height: 640px;
+  width: 90%;
+  height: 570px;
   margin-bottom: 50px;
   background-color: rgba(255, 255, 255, 0.664);
   border-radius: 50px;
@@ -156,7 +192,7 @@ nav .fa-bars {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 60%;
+  height: 340px;
 }
 .mainpage .list .worker .worker-top .background-worker {
   border-top-right-radius: 50px;
@@ -165,15 +201,9 @@ nav .fa-bars {
   height: 45%;
   background-color: rgb(17, 61, 89);
 }
-.mainpage .list .worker .worker-top .ped {
-  background-color: red;
-  width: 100%;
-  height: 45%;
-  background-position: 100px;
-}
 .mainpage .list .worker .worker-top .image {
   position: absolute;
-  top: 12.5%;
+  top: 10.5%;
   left: 50%;
   transform: translate(-50%);
 }
@@ -194,7 +224,6 @@ nav .fa-bars {
 .mainpage .list .worker .worker-top .info {
   display: flex;
   width: 100%;
-  height: auto;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
@@ -206,8 +235,7 @@ nav .fa-bars {
 .mainpage .list .worker .worker-top .info .dane2 {
   display: flex;
   flex-wrap: wrap;
-  width: 70vw;
-  max-width: 70vw;
+  width: 80%;
   margin-top: -10px;
   align-items: center;
 }
@@ -240,7 +268,7 @@ nav .fa-bars {
 }
 .mainpage .list .worker .worker-bottom {
   width: 100%;
-  height: 40%;
+  height: 230px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -251,8 +279,8 @@ nav .fa-bars {
   justify-content: center;
   align-items: center;
   margin: 5px;
-  height: 7vh;
-  width: 70vw;
+  height: 57px;
+  width: 80%;
   border-radius: 25px;
   color: white;
   border: none;
@@ -274,6 +302,15 @@ nav .fa-bars {
   background-color: white;
   margin-bottom: 0px;
 }
+.mainpage .list .worker .linia {
+  position: absolute;
+  height: 0.5px;
+  width: 40vh;
+  bottom: -25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(140, 86, 74);
+}
 
 .footer {
   display: flex;
@@ -285,7 +322,7 @@ nav .fa-bars {
   justify-content: space-around;
 }
 .footer .footerlogo {
-  background-image: url("../img/logo_alpha.png");
+  background-image: url("../img/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -309,7 +346,6 @@ nav .fa-bars {
   bottom: 3px;
   left: 3px;
   font-size: 0.6rem;
-  font-weight: bold;
 }
 
 @media (max-width: 375px) {
