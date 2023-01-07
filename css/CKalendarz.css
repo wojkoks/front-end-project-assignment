@@ -1,0 +1,149 @@
+#kal_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 300px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(208, 212, 216);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+}
+#kal_body .kal_week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1vw;
+  margin: 0;
+}
+#kal_body .kal_week .kal_day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 14.28%;
+  height: 10vw;
+  padding: 0;
+  margin: 0.5vw;
+  border-radius: 15%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  line-height: 2rem;
+}
+#kal_body .kal_week .kal_day .dn {
+  font-size: 2rem;
+  text-align: center;
+}
+#kal_body .kal_week .kal_day .appo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2vw;
+  height: 3vw;
+  width: 100%;
+}
+#kal_body .kal_week .kal_day_c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 14.28%;
+  height: 10vw;
+  padding: 0;
+  margin: 0.5vw;
+  border-radius: 15%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  line-height: 2rem;
+  background-color: rgb(232, 238, 242);
+}
+#kal_body .kal_week .kal_day_c .dn {
+  font-size: 2rem;
+  text-align: center;
+}
+#kal_body .kal_week .kal_day_c .appo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.75vw;
+  height: 3vw;
+  width: 100%;
+}
+#kal_body .kal_week .kal_day_ntm {
+  opacity: 0.5;
+  background-color: grey;
+}
+#kal_body .kal_week .kal_day_ntm .dn {
+  font-size: 2rem;
+  text-align: center;
+}
+#kal_body .kal_week .kal_day_ntm .appo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.75vw;
+  height: 3vw;
+  width: 100%;
+}
+#kal_body .kal_week .kal_day_o {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 14.28%;
+  height: 10vw;
+  padding: 0;
+  margin: 0.5vw;
+  border-radius: 15%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 2rem;
+  background-color: green;
+}
+#kal_body .kal_week .kal_day_o .dn {
+  font-size: 2rem;
+  text-align: center;
+}
+#kal_body .kal_week .kal_day_o .appo {
+  display: none;
+}
+#kal_body .kal_week .kal_day_o:hover .dn {
+  font-size: 2rem;
+  text-align: center;
+}
+#kal_body .kal_week .kal_day_o:hover .appo {
+  display: contents;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.75vw;
+  height: 3vw;
+  width: 100%;
+}/*# sourceMappingURL=CKalendarz.css.map */
