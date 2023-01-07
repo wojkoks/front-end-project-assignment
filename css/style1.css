@@ -9,27 +9,32 @@
 
 body {
   position: relative;
+  font-family: "Alegreya Sans SC", sans-serif;
 }
 
 nav {
-  position: fixed;
-  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 700;
+  z-index: 3;
   height: 10vh;
   width: 100%;
-  background-color: rgba(236, 233, 233, 0.918);
+  background-color: rgb(70, 49, 43);
+  -webkit-box-shadow: 0px 2px 5px 0px black;
+          box-shadow: 0px 2px 5px 0px black;
 }
 nav .logo {
   height: 100%;
-  width: 100px;
-  background-image: url("../img/logo_alpha.png");
+  width: 110px;
+  background-image: url("../img/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
 }
 nav .napis {
   position: relative;
@@ -42,8 +47,9 @@ nav .napis h1 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: black;
+  color: white;
   font-size: 1.4rem;
+  font-weight: 300;
 }
 nav .burger {
   position: relative;
@@ -53,10 +59,10 @@ nav .burger {
 nav .burger .fa-bars {
   position: absolute;
   top: 60%;
-  left: 80%;
+  left: 60%;
   -webkit-transform: translate(-50%, -80%);
           transform: translate(-50%, -80%);
-  color: #2ad591;
+  color: white;
   font-size: 2rem;
 }
 
@@ -72,11 +78,10 @@ nav .burger .fa-bars {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding-top: 40px;
-  background-color: white;
+  padding-top: 7vh;
+  background-color: rgb(232, 238, 242);
 }
 .mainpage .worker {
-  margin-top: 8vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,40 +89,128 @@ nav .burger .fa-bars {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 90%;
-  height: 50vh;
-  background-color: rgba(236, 233, 233, 0.918);
-  border-radius: 10px;
+  position: relative;
+  width: 85vw;
+  height: 520px;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.664);
+  border-radius: 50px;
 }
-.mainpage .worker .image {
+.mainpage .worker .worker-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 10px;
-  height: 75%;
-  width: 70%;
-  border-bottom: 1px solid #2ad591;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 80%;
 }
-.mainpage .worker .image img {
+.mainpage .worker .worker-top .background-worker {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  width: 100%;
+  height: 45%;
+  background-color: rgb(17, 61, 89);
+}
+.mainpage .worker .worker-top .ped {
+  width: 100%;
+  height: 45%;
+}
+.mainpage .worker .worker-top .image {
+  position: absolute;
+  top: 12.5%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.mainpage .worker .worker-top .image img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  height: 220px;
-  width: 250px;
-  border: 2px solid rgba(199, 199, 199, 0.918);
-  border-radius: 5px;
+  height: 200px;
+  width: 200px;
+  -webkit-box-shadow: 0px 0px 10px rgb(17, 61, 89);
+          box-shadow: 0px 0px 10px rgb(17, 61, 89);
+  border-radius: 25%;
 }
-.mainpage .worker .info {
+.mainpage .worker .worker-top .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 55%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -10px;
+  font-size: 1rem;
+}
+.mainpage .worker .worker-top .info .dane1 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.mainpage .worker .worker-top .info .dane2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70vw;
+  max-width: 70vw;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mainpage .worker .worker-top .info .dane2 .perk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(114, 78, 69);
+  width: 100%;
+  inline-size: -webkit-min-content;
+  inline-size: -moz-min-content;
+  inline-size: min-content;
+  height: 2rem;
+  -webkit-box-shadow: 0px 0px 4px black;
+          box-shadow: 0px 0px 4px black;
+  border-radius: 20px;
+  margin: 3px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  color: rgb(232, 238, 242);
+}
+.mainpage .worker .worker-top .info .dane2 .perk .pilka {
+  white-space: nowrap;
+  width: 1rem;
+  height: 1rem;
+  background-color: rgb(232, 238, 242);
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+.mainpage .worker .worker-top .info .dane2 .perk .pertext {
+  margin-right: 10px;
+}
+.mainpage .worker .worker-bottom {
+  width: 100%;
+  height: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,21 +218,45 @@ nav .burger .fa-bars {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mainpage .worker .worker-bottom .rezbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 25%;
-  width: 100%;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  height: 9vh;
+  width: 70vw;
+  border-radius: 25px;
+  color: white;
+  border: none;
+  background-color: rgb(17, 61, 89);
+  cursor: pointer;
 }
-.mainpage .worker .info .dane1 {
-  font-size: 1.1rem;
+.mainpage .worker .worker-bottom .rezbutton p {
   font-weight: bold;
-  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+.mainpage .worker .worker-bottom .message {
+  border: none;
+  color: white;
+  background-color: rgb(17, 61, 89);
+}
+.mainpage .worker .worker-bottom .number {
+  border: solid rgb(17, 61, 89);
+  color: rgb(17, 61, 89);
+  background-color: white;
+  margin-bottom: 0px;
 }
 .mainpage .button-reason {
   position: relative;
@@ -155,7 +272,7 @@ nav .burger .fa-bars {
   margin-top: 30px;
   width: 90%;
   height: 70px;
-  background-color: #2ad591;
+  background-color: rgb(17, 61, 89);
   border-radius: 25px;
 }
 .mainpage .button-reason p {
@@ -171,8 +288,7 @@ nav .burger .fa-bars {
 .mainpage #calendar {
   margin-top: 30px;
   width: 90%;
-  height: 90vw;
-  background-color: #464646;
+  height: auto;
 }
 
 .footer {
@@ -190,10 +306,10 @@ nav .burger .fa-bars {
   height: 30vh;
   margin-top: 30px;
   color: white;
-  background-color: #464646;
+  background-color: rgb(17, 61, 89);
 }
-.footer .footerlogo {
-  background-image: url("../img/logo_alpha.png");
+.footer .logo {
+  background-image: url("../img/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

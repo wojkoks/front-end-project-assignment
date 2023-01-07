@@ -1,3 +1,4 @@
+/* Color Theme Swatches in RGBA */
 *,
 *::before,
 *::after {
@@ -9,37 +10,77 @@
 
 body {
   position: relative;
-  font-family: "Lato", sans-serif;
+  font-family: "Sevillana", "Lato", sans-serif;
   font-weight: 400;
+  height: 100%;
 }
 
-nav .fa-bars {
-  background-color: rgba(70, 70, 70, 0.4352941176);
-  width: 4rem;
-  height: 4rem;
-  padding: 14px;
-  padding-top: 11px;
-  border-radius: 40%;
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 700;
   z-index: 3;
-  top: 20px;
-  right: 20px;
-  font-size: 2.5rem;
-  color: transparent;
-  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.38);
-          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.38);
-  text-shadow: 1px 0px rgba(0, 0, 0, 0.564);
-  cursor: pointer;
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(70, 49, 43);
+  -webkit-box-shadow: 0px 2px 5px 0px black;
+          box-shadow: 0px 2px 5px 0px black;
+}
+nav .logo {
+  height: 100%;
+  width: 110px;
+  background-image: url("../img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+nav .napis {
+  position: relative;
+  width: 100px;
+  height: 100%;
+}
+nav .napis h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.4rem;
+}
+nav .burger {
+  position: relative;
+  width: 100px;
+  height: 100%;
+}
+nav .burger .fa-bars {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -80%);
+          transform: translate(-50%, -80%);
+  color: white;
+  font-size: 2rem;
+}
+
+.spacer {
+  width: 100%;
+  height: 8vh;
 }
 
 .header {
   height: 80vh;
   padding-left: 20px;
   padding-right: 20px;
-  background-image: url(../img/tlo.png);
+  background-image: url(../img/tlo2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 50%;
   justify-items: center;
   text-align: center;
 }
@@ -52,7 +93,7 @@ nav .fa-bars {
 }
 
 .mainpage {
-  background-color: rgba(236, 233, 233, 0.918);
+  background-color: rgb(208, 212, 216);
   position: relative;
 }
 .mainpage .carblok {
@@ -66,7 +107,7 @@ nav .fa-bars {
   padding-bottom: 5%;
   padding-left: 3vw;
   padding-right: 3vw;
-  background-color: rgba(199, 199, 199, 0.918);
+  background-color: rgb(232, 238, 242);
   width: 100%;
   height: 90%;
 }
@@ -115,7 +156,7 @@ nav .fa-bars {
   margin-top: 5%;
   border-radius: 25px;
   color: white;
-  background-color: #2ad591;
+  background-color: rgb(17, 61, 89);
   cursor: pointer;
 }
 .mainpage .specjalizacja .specbutton .specbuttontext {
@@ -149,7 +190,7 @@ nav .fa-bars {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: grey;
+  background-color: rgb(140, 86, 74);
 }
 .mainpage .list {
   display: -webkit-box;
@@ -172,11 +213,11 @@ nav .fa-bars {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  height: 70vh;
-  width: 85vw;
-  margin-bottom: 40px;
+  width: 90%;
+  height: 570px;
+  margin-bottom: 50px;
   background-color: rgba(255, 255, 255, 0.664);
-  border-radius: 5px;
+  border-radius: 50px;
 }
 .mainpage .list .worker .worker-top {
   display: -webkit-box;
@@ -187,21 +228,18 @@ nav .fa-bars {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 60%;
-  background-color: white;
-  border-bottom: 1px solid rgba(236, 233, 233, 0.918);
+  height: 340px;
 }
 .mainpage .list .worker .worker-top .background-worker {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
   width: 100%;
   height: 45%;
-  background-position: 100px;
-  background-color: rgb(42, 213, 145);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(42, 213, 145)), to(rgb(110, 116, 110)));
-  background-image: linear-gradient(180deg, rgb(42, 213, 145) 0%, rgb(110, 116, 110) 100%);
+  background-color: rgb(17, 61, 89);
 }
 .mainpage .list .worker .worker-top .image {
   position: absolute;
-  top: 12.5%;
+  top: 10.5%;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -213,39 +251,84 @@ nav .fa-bars {
      object-position: top;
   height: 170px;
   width: 170px;
-  border: 10px solid rgba(255, 250, 250, 0.4);
+  -webkit-box-shadow: 0px 0px 10px rgb(17, 61, 89);
+          box-shadow: 0px 0px 10px rgb(17, 61, 89);
   border-radius: 25%;
+}
+.mainpage .list .worker .worker-top .spacer {
+  width: 100%;
+  height: 90px;
 }
 .mainpage .list .worker .worker-top .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   font-size: 1rem;
 }
 .mainpage .list .worker .worker-top .info .dane1 {
   font-weight: bold;
 }
 .mainpage .list .worker .worker-top .info .dane2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
   margin-top: -10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mainpage .list .worker .worker-top .info .dane2 .perk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(114, 78, 69);
+  width: 100%;
+  inline-size: -webkit-min-content;
+  inline-size: -moz-min-content;
+  inline-size: min-content;
+  height: 2rem;
+  -webkit-box-shadow: 0px 0px 4px black;
+          box-shadow: 0px 0px 4px black;
+  border-radius: 20px;
+  margin: 3px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  color: rgb(232, 238, 242);
+}
+.mainpage .list .worker .worker-top .info .dane2 .perk .pilka {
+  white-space: nowrap;
+  width: 1rem;
+  height: 1rem;
+  background-color: rgb(232, 238, 242);
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+.mainpage .list .worker .worker-top .info .dane2 .perk .pertext {
+  margin-right: 10px;
 }
 .mainpage .list .worker .worker-bottom {
   width: 100%;
-  height: 40%;
+  height: 230px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,11 +354,12 @@ nav .fa-bars {
       -ms-flex-align: center;
           align-items: center;
   margin: 5px;
-  height: 7vh;
-  width: 70vw;
+  height: 57px;
+  width: 80%;
   border-radius: 25px;
-  color: grey;
-  border: solid grey;
+  color: white;
+  border: none;
+  background-color: rgb(17, 61, 89);
   cursor: pointer;
 }
 .mainpage .list .worker .worker-bottom .rezbutton p {
@@ -285,19 +369,30 @@ nav .fa-bars {
 .mainpage .list .worker .worker-bottom .message {
   border: none;
   color: white;
-  background-color: #2ad591;
+  background-color: rgb(17, 61, 89);
 }
 .mainpage .list .worker .worker-bottom .number {
-  border: solid #2ad591;
-  color: #2ad591;
+  border: solid rgb(17, 61, 89);
+  color: rgb(17, 61, 89);
   background-color: white;
+  margin-bottom: 0px;
+}
+.mainpage .list .worker .linia {
+  position: absolute;
+  height: 0.5px;
+  width: 40vh;
+  bottom: -25px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgb(140, 86, 74);
 }
 
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #464646;
+  background-color: rgb(17, 61, 89);
   width: 100%;
   height: 30vh;
   color: white;
@@ -308,7 +403,7 @@ nav .fa-bars {
       justify-content: space-around;
 }
 .footer .footerlogo {
-  background-image: url("../img/logo_alpha.png");
+  background-image: url("../img/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -332,7 +427,6 @@ nav .fa-bars {
   bottom: 3px;
   left: 3px;
   font-size: 0.6rem;
-  font-weight: bold;
 }
 
 @media (max-width: 375px) {

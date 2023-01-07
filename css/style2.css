@@ -12,23 +12,28 @@ body {
 }
 
 nav {
-  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 700;
+  z-index: 3;
   height: 10vh;
   width: 100%;
-  background-color: rgba(236, 233, 233, 0.918);
+  background-color: rgb(70, 49, 43);
+  -webkit-box-shadow: 0px 2px 5px 0px black;
+          box-shadow: 0px 2px 5px 0px black;
 }
 nav .logo {
   height: 100%;
-  width: 100px;
-  background-image: url("../img/logo_alpha.png");
+  width: 110px;
+  background-image: url("../img/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
 }
 nav .napis {
   position: relative;
@@ -41,7 +46,7 @@ nav .napis h1 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: black;
+  color: white;
   font-size: 1.4rem;
 }
 nav .burger {
@@ -52,10 +57,10 @@ nav .burger {
 nav .burger .fa-bars {
   position: absolute;
   top: 60%;
-  left: 80%;
+  left: 60%;
   -webkit-transform: translate(-50%, -80%);
           transform: translate(-50%, -80%);
-  color: #2ad591;
+  color: white;
   font-size: 2rem;
 }
 
@@ -88,7 +93,7 @@ nav .burger .fa-bars {
           align-items: center;
   width: 90%;
   height: 50vh;
-  background-color: rgba(236, 233, 233, 0.918);
+  background-color: rgb(208, 212, 216);
   border-radius: 10px;
 }
 .mainpage .request .twojaWizyta {
@@ -105,7 +110,7 @@ nav .burger .fa-bars {
   border-top-right-radius: 10px;
   width: 100%;
   height: 15%;
-  background-color: #2ad591;
+  background-color: rgb(17, 61, 89);
 }
 .mainpage .request .twojaWizyta p {
   font-size: 1.3rem;
@@ -123,7 +128,7 @@ nav .burger .fa-bars {
 .mainpage .request .opis .jasny {
   width: 100%;
   height: 25%;
-  background-color: rgba(236, 233, 233, 0.918);
+  background-color: rgb(208, 212, 216);
 }
 .mainpage .request .opis .miejsce {
   border-bottom-left-radius: 10px;
@@ -142,6 +147,8 @@ nav .burger .fa-bars {
   margin-top: 7.5%;
   width: 90%;
   height: 15vw;
+  font-size: 4vw;
+  margin-bottom: 15px;
 }
 .mainpage .guziki .guzik {
   height: 100%;
@@ -151,7 +158,7 @@ nav .burger .fa-bars {
 .mainpage .guziki .powrot {
   position: relative;
   color: white;
-  background-color: #464646;
+  background-color: rgb(17, 61, 89);
 }
 .mainpage .guziki .powrot p {
   position: absolute;
@@ -163,7 +170,7 @@ nav .burger .fa-bars {
 .mainpage .guziki .potwierdz {
   position: relative;
   color: white;
-  background-color: #2ad591;
+  background-color: rgb(17, 61, 89);
 }
 .mainpage .guziki .potwierdz p {
   position: absolute;
@@ -174,24 +181,21 @@ nav .burger .fa-bars {
 }
 
 .footer {
-  position: absolute;
-  top: 70v;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: rgb(17, 61, 89);
+  width: 100%;
+  height: 30vh;
+  color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 100%;
-  height: 30vh;
-  margin-top: 30px;
-  color: white;
-  background-color: #464646;
 }
 .footer .footerlogo {
-  background-image: url("../img/logo_alpha.png");
+  background-image: url("../img/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -204,25 +208,12 @@ nav .burger .fa-bars {
   background-color: white;
 }
 .footer .help {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   height: 20vh;
   width: 34vw;
-}
-.footer .help .nfz {
-  font-weight: bold;
 }
 .footer .copyright {
   position: absolute;
   bottom: 3px;
   left: 3px;
   font-size: 0.6rem;
-  color: lightgray;
 }/*# sourceMappingURL=style2.css.map */
