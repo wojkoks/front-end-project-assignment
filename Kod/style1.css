@@ -71,7 +71,7 @@ nav .burger .fa-bars {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 85vw;
+  width: 500px;
   height: 520px;
   margin-top: 50px;
   background-color: rgba(255, 255, 255, 0.664);
@@ -169,8 +169,8 @@ nav .burger .fa-bars {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 9vh;
-  width: 70vw;
+  height: 7vh;
+  width: 70%;
   border-radius: 25px;
   color: white;
   border: none;
@@ -198,7 +198,7 @@ nav .burger .fa-bars {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  width: 90%;
+  width: 300px;
   height: 70px;
   background-color: rgb(17, 61, 89);
   border-radius: 25px;
@@ -229,7 +229,7 @@ nav .burger .fa-bars {
   height: 30vh;
   margin-top: 30px;
   color: white;
-  background-color: rgb(17, 61, 89);
+  background-color: rgb(70, 49, 43);
 }
 .footer .logo {
   background-image: url("../img/logo.png");

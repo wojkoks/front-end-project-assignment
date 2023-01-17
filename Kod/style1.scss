@@ -79,7 +79,7 @@ nav {
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		width: 85vw;
+		width:500px;
 		height: 520px;
 		margin-top: 50px;
 		background-color: rgba(255, 255, 255, 0.664);
@@ -186,8 +186,8 @@ nav {
 				justify-content: center;
 				align-items: center;
 				// margin: 0px;
-				height: 9vh;
-				width: 70vw;
+				height: 7vh;
+				width: 70%;
 				border-radius: 25px;
 				color: white;
 				border: none;
@@ -217,7 +217,7 @@ nav {
 		justify-content: center;
 		align-items: center;
 		margin-top: 30px;
-		width: 90%;
+		width: 300px;
 		height: 70px;
 		background-color: $mainColor;
 		border-radius: 25px;
@@ -248,7 +248,7 @@ nav {
 	height: 30vh;
 	margin-top: 30px;
 	color: white;
-	background-color: $mainColor;
+	background-color: $navColor;
 	.logo {
 		background-image: url('../img/logo.png');
 		background-size: contain;
@@ -279,4 +279,9 @@ nav {
 		font-size: 0.6rem;
 		color: lightgray;
 	}
+}
+@media (min-width: 992px) {
+	.mainpage{
+
+	}	
 }

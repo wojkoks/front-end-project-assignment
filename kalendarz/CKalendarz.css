@@ -103,4 +103,117 @@
   font-size: 0.75vw;
   height: 3vw;
   width: 100%;
+}
+
+@media (min-width: 992px) {
+  #calendar {
+    display: flex;
+    justify-content: center;
+  }
+  #calendar #kal_body {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    width: 50%;
+    height: 40%;
+    background-color: rgb(208, 212, 216);
+    justify-content: center;
+    border-radius: 10px;
+  }
+  #calendar #kal_body .kal_week {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1vw;
+    margin: 0;
+  }
+  #calendar #kal_body .kal_week .kal_day {
+    display: flex;
+    flex-direction: column;
+    width: 14.28%;
+    height: 5vw;
+    padding: 0;
+    margin: 0.5vw;
+    border-radius: 15%;
+    justify-content: center;
+    background-color: white;
+    line-height: 2rem;
+  }
+  #calendar #kal_body .kal_week .kal_day .dn {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #calendar #kal_body .kal_week .kal_day .appo {
+    justify-content: center;
+    font-size: 2vw;
+    height: 3vw;
+    width: 100%;
+  }
+  #calendar #kal_body .kal_week .kal_day_c {
+    display: flex;
+    flex-direction: column;
+    width: 14.28%;
+    height: 5vw;
+    padding: 0;
+    margin: 0.5vw;
+    border-radius: 15%;
+    justify-content: center;
+    background-color: white;
+    line-height: 2rem;
+    background-color: rgb(232, 238, 242);
+  }
+  #calendar #kal_body .kal_week .kal_day_c .dn {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #calendar #kal_body .kal_week .kal_day_c .appo {
+    justify-content: center;
+    font-size: 0.75vw;
+    height: 3vw;
+    width: 100%;
+  }
+  #calendar #kal_body .kal_week .kal_day_ntm {
+    opacity: 0.5;
+    background-color: grey;
+  }
+  #calendar #kal_body .kal_week .kal_day_ntm .dn {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #calendar #kal_body .kal_week .kal_day_ntm .appo {
+    justify-content: center;
+    font-size: 0.75vw;
+    height: 3vw;
+    width: 100%;
+  }
+  #calendar #kal_body .kal_week .kal_day_o {
+    display: flex;
+    flex-direction: column;
+    width: 14.28%;
+    height: 5vw;
+    padding: 0;
+    margin: 0.5vw;
+    border-radius: 15%;
+    justify-content: center;
+    line-height: 2rem;
+    background-color: green;
+  }
+  #calendar #kal_body .kal_week .kal_day_o .dn {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #calendar #kal_body .kal_week .kal_day_o .appo {
+    display: none;
+  }
+  #calendar #kal_body .kal_week .kal_day_o:hover .dn {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #calendar #kal_body .kal_week .kal_day_o:hover .appo {
+    display: contents;
+    justify-content: center;
+    font-size: 0.75vw;
+    height: 3vw;
+    width: 100%;
+  }
 }/*# sourceMappingURL=CKalendarz.css.map */

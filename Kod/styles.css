@@ -90,10 +90,7 @@ nav .burger .fa-bars {
   position: relative;
 }
 .mainpage .primeblok .linia {
-  margin-top: 2%;
-  background-color: rgb(114, 78, 69);
-  width: 60%;
-  height: 0.1vh;
+  display: none;
 }
 .mainpage .primeblok .onas {
   display: none;
@@ -317,7 +314,7 @@ nav .burger .fa-bars {
 
 .footer {
   display: flex;
-  background-color: rgb(17, 61, 89);
+  background-color: rgb(70, 49, 43);
   width: 100%;
   height: 30vh;
   color: white;
@@ -374,6 +371,13 @@ nav .burger .fa-bars {
     width: 100%;
     align-items: center;
     background-color: rgb(232, 238, 242);
+  }
+  .mainpage .primeblok .linia {
+    display: inline-block;
+    margin-top: 2%;
+    background-color: rgb(114, 78, 69);
+    width: 60%;
+    height: 0.1vh;
   }
   .mainpage .primeblok .onas {
     display: inline-block;
