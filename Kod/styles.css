@@ -9,7 +9,7 @@
 
 body {
   position: relative;
-  font-family: "Sevillana", "Lato", sans-serif;
+  font-family: "Alegreya Sans SC", "Lato", sans-serif;
   font-weight: 400;
   height: 100%;
 }
@@ -17,7 +17,7 @@ body {
 nav {
   display: flex;
   position: fixed;
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 700;
   z-index: 3;
@@ -25,8 +25,6 @@ nav {
   width: 100%;
   background-color: rgb(70, 49, 43);
   box-shadow: 0px 2px 5px 0px black;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 nav .logo {
   height: 100%;
@@ -238,6 +236,7 @@ nav .burger .fa-bars {
   width: 80%;
   margin-top: -10px;
   align-items: center;
+  justify-content: center;
 }
 .mainpage .list .worker .worker-top .info .dane2 .perk {
   display: flex;
