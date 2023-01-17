@@ -95,20 +95,20 @@ nav {
 			font-size: 2rem;
 		}
 	}
-	.card {
-		position: absolute;
-		top: 10vh;
-		// left: 50%;
-		// transform: translate(-50%, -50%);
-		width: 100%;
-		height: 50vh;
-		background-color: darkblue;
-		opacity: 0.35;
-	}
+	// .card {
+	// 	position: absolute;
+	// 	top: 10vh;
+	// 	// left: 50%;
+	// 	// transform: translate(-50%, -50%);
+	// 	width: 100%;
+	// 	height: 50vh;
+	// 	background-color: darkblue;
+	// 	opacity: 0.35;
+	// }
 }
 .spacer {
 	width: 100%;
-	height: 8vh;
+	height: 10vh;
 }
 .header {
 	height: 80vh;
@@ -131,6 +131,17 @@ nav {
 .mainpage {
 	background-color: $secondColor;
 	position: relative;
+	.primeblok{
+		.linia {
+			margin-top: 2%;
+			background-color: $ndspec;
+			width:60%;
+			height: 0.1vh;
+		}
+		.onas{
+			display:none;
+		}	
+	}
 	.carblok {
 		display: flex;
 		justify-content: center;
@@ -433,25 +444,89 @@ nav {
 }
 
 @media (min-width: 992px) {
-	nav {
-		.fa-bars {
-			display: none;
-		}
-	}
-	.header {
-		display: none;
-	}
+	
 	.mainpage {
-		.carousel {
-			display: none;
+		.primeblok {
+			display:flex;
+			flex-direction: column;
+			width:100%;
+ 			align-items: center;
+			background-color: $thirdColor;
+			.onas{
+				display:inline-block;
+				width:60%;
+				padding-top: 3%;
+				padding-bottom: 5%;
+				h2{
+					text-align: center;
+				}
+				text-align: justify;
+			}
+			.carblok {
+				display: flex;
+				justify-content: center;
+				padding-top: 2%;
+				padding-bottom: 2%;
+				padding-left: 3vw;
+				padding-right: 3vw;
+				margin-top: 3vh;
+				width: 70%;
+				.carousel {
+					position: relative;
+					box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.217);
+					.carousel-item {
+						position: relative;
+						img {
+							object-fit: cover;
+							aspect-ratio: 14/9;
+						}
+						.carousel-caption {
+							position: absolute;
+							left: 0;
+							right: 0;
+							bottom: -27.5px;
+							background-color: rgba(0, 0, 0, 0.8);
+							font-size: 0.8rem;
+							padding-left: 5px;
+							text-align: left;
+						}
+					}
+					.carousel-indicators {
+						position: absolute;
+						top: 10px;
+					}
+				}
+			}
 		}
 		.specjalizacja {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			.specbutton {
-				height: 50px;
-				width: 350px;
+				position: relative;
+				height: 7vh;
+				width: 400px;
+				border-radius: 25px;
+				color: white;
+				background-color: $mainColor;
+				cursor: pointer;
+				.specbuttontext {
+					position: absolute;
+					top: 50%;
+					left: 45%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			.fa-chevron-down {
+				position: absolute;
+				top: 50%;
+				left: 85%;
+				transform: translate(-50%, -50%);
+				font-size: 1.5rem;
 			}
 		}
 		.nasi {
+			margin-top:3%;
 			.nasiTitle {
 				text-align: center;
 			}
@@ -463,6 +538,7 @@ nav {
 			display: grid;
 			grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 			justify-items: center;
+			margin-top: 2%;
 			.worker {
 				width: 500px;
 				height: 600px;

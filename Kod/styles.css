@@ -20,7 +20,7 @@ nav {
   justify-content: space-around;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 700;
-  z-index: 3;
+  z-index: 10000;
   height: 10vh;
   width: 100%;
   background-color: rgb(70, 49, 43);
@@ -63,7 +63,7 @@ nav .burger .fa-bars {
 
 .spacer {
   width: 100%;
-  height: 8vh;
+  height: 10vh;
 }
 
 .header {
@@ -89,6 +89,15 @@ nav .burger .fa-bars {
   background-color: rgb(208, 212, 216);
   position: relative;
 }
+.mainpage .primeblok .linia {
+  margin-top: 2%;
+  background-color: rgb(114, 78, 69);
+  width: 60%;
+  height: 0.1vh;
+}
+.mainpage .primeblok .onas {
+  display: none;
+}
 .mainpage .carblok {
   display: flex;
   justify-content: center;
@@ -108,8 +117,7 @@ nav .burger .fa-bars {
   position: relative;
 }
 .mainpage .carblok .carousel .carousel-item img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   aspect-ratio: 14/9;
 }
 .mainpage .carblok .carousel .carousel-item .carousel-caption {
@@ -206,10 +214,8 @@ nav .burger .fa-bars {
   transform: translate(-50%);
 }
 .mainpage .list .worker .worker-top .image img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  object-fit: cover;
+  object-position: top;
   height: 170px;
   width: 170px;
   box-shadow: 0px 0px 10px rgb(17, 61, 89);
@@ -243,8 +249,6 @@ nav .burger .fa-bars {
   align-items: center;
   background-color: rgb(114, 78, 69);
   width: 100%;
-  inline-size: -webkit-min-content;
-  inline-size: -moz-min-content;
   inline-size: min-content;
   height: 2rem;
   box-shadow: 0px 0px 4px black;
@@ -364,18 +368,87 @@ nav .burger .fa-bars {
   }
 }
 @media (min-width: 992px) {
-  nav .fa-bars {
-    display: none;
+  .mainpage .primeblok {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(232, 238, 242);
   }
-  .header {
-    display: none;
+  .mainpage .primeblok .onas {
+    display: inline-block;
+    width: 60%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    text-align: justify;
   }
-  .mainpage .carousel {
-    display: none;
+  .mainpage .primeblok .onas h2 {
+    text-align: center;
+  }
+  .mainpage .primeblok .carblok {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: 3vh;
+    width: 70%;
+  }
+  .mainpage .primeblok .carblok .carousel {
+    position: relative;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.217);
+  }
+  .mainpage .primeblok .carblok .carousel .carousel-item {
+    position: relative;
+  }
+  .mainpage .primeblok .carblok .carousel .carousel-item img {
+    object-fit: cover;
+    aspect-ratio: 14/9;
+  }
+  .mainpage .primeblok .carblok .carousel .carousel-item .carousel-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -27.5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 0.8rem;
+    padding-left: 5px;
+    text-align: left;
+  }
+  .mainpage .primeblok .carblok .carousel .carousel-indicators {
+    position: absolute;
+    top: 10px;
+  }
+  .mainpage .specjalizacja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .mainpage .specjalizacja .specbutton {
-    height: 50px;
-    width: 350px;
+    position: relative;
+    height: 7vh;
+    width: 400px;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(17, 61, 89);
+    cursor: pointer;
+  }
+  .mainpage .specjalizacja .specbutton .specbuttontext {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  .mainpage .specjalizacja .fa-chevron-down {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+  }
+  .mainpage .nasi {
+    margin-top: 3%;
   }
   .mainpage .nasi .nasiTitle {
     text-align: center;
@@ -387,6 +460,7 @@ nav .burger .fa-bars {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     justify-items: center;
+    margin-top: 2%;
   }
   .mainpage .list .worker {
     width: 500px;
